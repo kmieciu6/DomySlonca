@@ -1,7 +1,13 @@
 .footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   text-align: center;
+  background: $footer-color;
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+  }
 
   img {
     width: 100px;

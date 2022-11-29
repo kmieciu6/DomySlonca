@@ -3,7 +3,10 @@ import styled from "styled-components";
 import {Link} from "react-router-dom";
 
 const StyledMenu = styled.nav`
-  @media (max-width: 768px) {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+  @media (max-width: 1023px) {
     nav {
       display: flex;
       position: absolute;
@@ -33,13 +36,13 @@ const StyledMenu = styled.nav`
       }
     }
   }
-  @media (min-width: 769px) {
-    display: none;
-  }
 `
 
 const StyledBurger = styled.button`
-  @media (max-width: 768px) {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+  @media (max-width: 1023px) {
     border: none;
     background: white;
 
@@ -64,9 +67,6 @@ const StyledBurger = styled.button`
     }
 
     margin: 30px;
-  }
-  @media (min-width: 769px) {
-    display: none;
   }
 `
 

@@ -4,10 +4,17 @@
 @import 'settings/fonts';
 @import 'settings/mixins';
 
+@import "components/home";
 @import "components/button";
-@import "components/footer";
 @import "components/header";
 @import "components/nav";
+@import "components/opening";
+@import "components/footer";
+@import "components/yurts";
+@import "components/surroundings";
+@import "components/attractions";
+@import "components/prices";
+@import "components/contact";
 //@import "components/";
 
 @import 'generic/base';
