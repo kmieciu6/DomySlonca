@@ -4,7 +4,7 @@ import facebook_logo from "../assets/logo_facebook.png";
 
 const Footer = () => {
     return (
-        <secton id='footer' className='footer'>
+        <section id='footer' className='footer'>
             <div className='container'>
                 <h3>Znajdziesz nas na</h3>
                 <div className='links'>
@@ -16,7 +16,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-        </secton>
+        </section>
     )
 }
 

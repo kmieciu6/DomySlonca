@@ -2,14 +2,14 @@ import React from "react";
 import Header from "./header/Header";
 import Footer from "./Footer";
 
-const Contact = () => {
+const Yurts = () => {
     return (
-        <section id='contact'>
+        <section id='yurts'>
             <Header/>
-            <h1>Kontakt</h1>
+            <h1>Nasze jurty</h1>
             <Footer/>
         </section>
     )
 }
 
-export default Contact;
+export default Yurts;

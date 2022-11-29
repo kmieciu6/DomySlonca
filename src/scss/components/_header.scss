@@ -1,0 +1,56 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid grey;
+  box-shadow: 0 3px 6px gray;
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1352px;
+  margin: 0 auto;
+
+  img {
+    position: absolute;
+  }
+
+  @media (max-width: 1352px) {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  //font-family: $font-raleway;
+  font-size: 1rem;
+  font-weight: 300;
+  color: orange;
+  text-decoration: none;
+
+  @media (min-width: 500px) {
+    font-size: 2rem;
+  }
+
+  &:hover {
+    color: black;
+  }
+
+  h3 {
+    margin-left: 5rem;
+  }
+
+  .main_logo {
+    width: 70px;
+  }
+}
