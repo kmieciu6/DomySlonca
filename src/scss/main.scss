@@ -3,6 +3,7 @@
 @import 'settings/colors';
 @import 'settings/fonts';
 @import 'settings/mixins';
+@import "~bootstrap/scss/bootstrap";
 
 @import "components/home";
 @import "components/button";
@@ -15,6 +16,8 @@
 @import "components/attractions";
 @import "components/prices";
 @import "components/contact";
+@import "components/video";
+@import "components/maps";
 //@import "components/";
 
 @import 'generic/base';

@@ -1,5 +1,9 @@
 # Domy Słońca
 
+This project was bootstrapped with Create React App.
+
+demo https://oddajrzeczyapp.netlify.app
+
 ## To run the project
 
 In the project directory, you can run:
