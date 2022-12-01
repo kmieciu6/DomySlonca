@@ -1,53 +1,94 @@
-.header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  background: white;
-  border-bottom: 1px solid grey;
-  box-shadow: 0 3px 6px gray;
-  z-index: 2;
-}
-
-.container {
+#header {
+  height: 10vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1352px;
-  margin: 0 auto;
+  justify-content: center;
 
-  img {
-    position: absolute;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1352px;
+    margin: 0 auto;
+
+    img {
+      position: absolute;
+    }
+
+    @media (max-width: 1352px) {
+      width: 100%;
+      padding: 0 15px;
+    }
   }
 
-  @media (max-width: 1352px) {
-    width: 100%;
-    padding: 0 15px;
+  .title {
+    display: flex;
+    align-items: center;
+    font-family: $font-main;
+    font-size: 1rem;
+    font-weight: 300;
+    color: orange;
+    text-decoration: none;
+
+    @media (min-width: 500px) {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      color: black;
+    }
+
+    h3 {
+      margin-left: 5rem;
+    }
+
+    .main_logo {
+      width: 70px;
+    }
   }
-}
 
-.title {
-  display: flex;
-  align-items: center;
-  //font-family: $font-raleway;
-  font-size: 1rem;
-  font-weight: 300;
-  color: orange;
-  text-decoration: none;
+  .arrow {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50px;
+    background: red;
+    border: 3px solid white;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    position: fixed;
+    left: 4rem;
+    bottom: 4rem;
+    transition: 0.3s;
 
-  @media (min-width: 500px) {
-    font-size: 2rem;
-  }
+    @include mobile {
+      left: 2rem;
+      bottom: 6rem;
+    }
 
-  &:hover {
-    color: black;
-  }
+    &:hover {
+      padding-bottom: 2rem;
 
-  h3 {
-    margin-left: 5rem;
-  }
+      @include mobile {
 
-  .main_logo {
-    width: 70px;
+        &:hover {
+          padding-bottom: 0.5rem;
+        }
+
+        &:active {
+          padding-bottom: 2rem;
+        }
+      }
+
+      @include tablet {
+
+        &:hover {
+          padding-bottom: 0.5rem;
+        }
+
+        &:active {
+          padding-bottom: 2rem;
+        }
+      }
+    }
   }
 }

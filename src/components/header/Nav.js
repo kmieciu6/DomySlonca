@@ -9,22 +9,22 @@ const Nav = () => {
             <Burger open={open} setOpen={setOpen}/>
             <div className='nav_menu'>
                 <Link to='/'>
-                    <button>Strona główna</button>
+                    <button className='nav_btn'>Strona główna</button>
                 </Link>
                 <Link to='/yurts'>
-                    <button>Nasze Jurty</button>
+                    <button className='nav_btn'>Nasze Jurty</button>
                 </Link>
                 <Link to='/surroundings'>
-                    <button>Otoczenie</button>
+                    <button className='nav_btn'>Otoczenie</button>
                 </Link>
                 <Link to='/attractions'>
-                    <button>Atrakcje</button>
+                    <button className='nav_btn'>Atrakcje</button>
                 </Link>
                 <Link to='/prices'>
-                    <button>Cennik</button>
+                    <button className='nav_btn'>Cennik</button>
                 </Link>
                 <Link to='/contact'>
-                    <button>Kontakt</button>
+                    <button className='nav_btn'>Kontakt</button>
                 </Link>
             </div>
         </nav>

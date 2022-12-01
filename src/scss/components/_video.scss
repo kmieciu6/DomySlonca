@@ -1,0 +1,11 @@
+.video {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+
+  @include desktop {
+    min-height: 50vh;
+    max-height: 60vh;
+  }
+}
