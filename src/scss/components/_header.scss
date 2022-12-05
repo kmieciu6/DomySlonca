@@ -5,18 +5,13 @@
 
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1352px;
     margin: 0 auto;
 
     img {
       position: absolute;
-    }
-
-    @media (max-width: 1352px) {
-      width: 100%;
-      padding: 0 15px;
     }
   }
 
@@ -33,16 +28,22 @@
       font-size: 2rem;
     }
 
-    &:hover {
-      color: black;
+    @include desktop {
+      &:hover {
+        color: black;
+      }
     }
 
     h3 {
-      margin-left: 5rem;
+      margin-left: 6rem;
+
+      @include desktop {
+        font-size: 2rem;
+      }
     }
 
     .main_logo {
-      width: 70px;
+      width: 85px;
     }
   }
 
@@ -69,7 +70,6 @@
       padding-bottom: 2rem;
 
       @include mobile {
-
         &:hover {
           padding-bottom: 0.5rem;
         }
@@ -80,7 +80,6 @@
       }
 
       @include tablet {
-
         &:hover {
           padding-bottom: 0.5rem;
         }

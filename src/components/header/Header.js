@@ -16,10 +16,10 @@ const Header = () => {
                     <img className='main_logo' src={logo} alt="Domy Słońca"/>
                 </Link>
                 <Nav/>
-                <Scroll to={"home"} smooth duration={500}>
-                    <FontAwesomeIcon icon={faArrowUp} className='arrow'/>
-                </Scroll>
             </div>
+            <Scroll to={"home"} smooth duration={500}>
+                <FontAwesomeIcon icon={faArrowUp} className='arrow'/>
+            </Scroll>
         </section>
     );
 };

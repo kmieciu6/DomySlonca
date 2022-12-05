@@ -15,7 +15,7 @@ const StyledMenu = styled.nav`
       flex-direction: column;
       box-shadow: 0 3px 6px #A5A5A5;
       width: 100%;
-      z-index: 2;
+      z-index: 3;
       background: white;
 
       a {
@@ -45,7 +45,7 @@ const StyledBurger = styled.button`
   @media (max-width: 1023px) {
     border: none;
     background: white;
-
+    
     span {
       display: block;
       width: 20px;
