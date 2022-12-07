@@ -2,7 +2,7 @@
 
 This project was bootstrapped with Create React App.
 
-demo https://oddajrzeczyapp.netlify.app
+demo https://domyslonca.netlify.app
 
 ## To run the project
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./header/Header";
 import Footer from "./Footer";
+import Carousel_Yurts from "./Carousel_Yurts";
 
 const Yurts = () => {
     return (
@@ -11,6 +12,8 @@ const Yurts = () => {
             <div>Ogień</div>
             <div>Wiatr</div>
             <div>Etno</div>
+            {/* eslint-disable-next-line react/jsx-pascal-case */}
+            <Carousel_Yurts/>
             <Footer/>
         </section>
     )
