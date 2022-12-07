@@ -7,6 +7,10 @@ const Yurts = () => {
         <section id='yurts'>
             <Header/>
             <h1>Nasze jurty</h1>
+            <div>Słońce</div>
+            <div>Ogień</div>
+            <div>Wiatr</div>
+            <div>Etno</div>
             <Footer/>
         </section>
     )

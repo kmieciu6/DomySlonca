@@ -1,0 +1,55 @@
+#home {
+
+  h2 {
+    text-align: center;
+    padding: 3rem;
+    background: lightgrey;
+  }
+
+  .home_text {
+    padding: 1rem 6rem;
+
+    .akapit {
+      display: flex;
+      align-items: center;
+
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+
+      p {
+        text-align: justify;
+        width: 60%;
+      }
+    }
+
+    figure {
+      width: 300px;
+
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      overflow: hidden;
+
+      img {
+        width: 300px;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .7s ease-in-out;
+        transition: .7s ease-in-out;
+
+        &:active {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+
+        @include desktop {
+          &:hover {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}

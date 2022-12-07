@@ -1,20 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: Serif, serif;
 }
 
-h1 {
-  font-size: 4rem;
-
-  @include mobile {
-    font-size: 3rem;
-  }
-}
-
-h2 {
-  font-size: 2.5rem;
-
-  @include mobile {
-    font-size: 2rem;
-  }
+h1, h2, h3, h4, h5, p {
+  font-family: $font-main;
 }
