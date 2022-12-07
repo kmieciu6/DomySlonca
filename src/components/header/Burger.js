@@ -88,7 +88,6 @@ const Burger = ({open, setOpen}) => {
                 <nav onClick={closeSideBar}>
                     <Link to="/">Strona główna</Link>
                     <Link to="/yurts">Nasze jurty</Link>
-                    <Link to='/surroundings'>Otoczenie</Link>
                     <Link to='/attractions'>Atrakcje</Link>
                     <Link to='/prices'>Cennik</Link>
                     <Link to='/contact'>Kontakt</Link>

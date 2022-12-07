@@ -14,9 +14,6 @@ const Nav = () => {
                 <Link to='/yurts'>
                     <button className='nav_btn'>Nasze Jurty</button>
                 </Link>
-                <Link to='/surroundings'>
-                    <button className='nav_btn'>Otoczenie</button>
-                </Link>
                 <Link to='/attractions'>
                     <button className='nav_btn'>Atrakcje</button>
                 </Link>
