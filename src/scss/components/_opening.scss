@@ -1,4 +1,7 @@
 #opening {
   background: linear-gradient(to bottom right, orange, cornsilk);
-  padding: 0 4rem;
+
+  @include desktop {
+    padding: 0 4rem;
+  }
 }
