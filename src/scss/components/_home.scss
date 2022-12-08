@@ -1,22 +1,25 @@
 #home {
 
-  h2 {
-    text-align: center;
-    padding: 3rem;
-    background: linear-gradient(lightgrey, white);
-  }
+  .home_info {
+      background: linear-gradient(lightgrey, white);
 
-  .home_text {
-    display: flex;
-    justify-content: center;
+    h2 {
+      text-align: center;
+      padding: 3rem;
+    }
 
-    p {
-      text-align: justify;
-      font-size: 1.2rem;
-      width: 80%;
+    .home_text {
+      display: flex;
+      justify-content: center;
 
-      @include desktop {
-        width: 50%;
+      p {
+        text-align: justify;
+        font-size: 1.2rem;
+        width: 80%;
+
+        @include desktop {
+          width: 50%;
+        }
       }
     }
   }
