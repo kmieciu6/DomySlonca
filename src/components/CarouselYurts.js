@@ -1,6 +1,6 @@
 import { Carousel } from 'react-carousel-minimal';
 
-function Carousel_Yurts() {
+function CarouselYurts() {
     const data = [
         {
             image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
@@ -91,4 +91,4 @@ function Carousel_Yurts() {
     );
 }
 
-export default Carousel_Yurts;
+export default CarouselYurts;

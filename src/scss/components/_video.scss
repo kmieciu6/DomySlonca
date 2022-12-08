@@ -4,8 +4,11 @@
   justify-content: center;
   min-height: 20vh;
 
+  @include tablet {
+    min-height: 40vh;
+  }
+
   @include desktop {
-    min-height: 50vh;
-    max-height: 60vh;
+    min-height: 60vh;
   }
 }

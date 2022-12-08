@@ -28,7 +28,7 @@ const Home = () => {
                         niezapomniane wrażenia!
                     </p>
                 </div>
-            <Video embedId="09_niRBvLPc"/>
+                <Video embedId="09_niRBvLPc"/>
             </div>
             <Maps/>
             <Footer/>

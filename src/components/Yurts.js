@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./header/Header";
 import Footer from "./Footer";
-import Carousel_Yurts from "./Carousel_Yurts";
+import CarouselYurts from "./CarouselYurts";
 
 const Yurts = () => {
     return (
@@ -13,7 +13,7 @@ const Yurts = () => {
             <div>Wiatr</div>
             <div>Etno</div>
             {/* eslint-disable-next-line react/jsx-pascal-case */}
-            <Carousel_Yurts/>
+            <CarouselYurts/>
             <Footer/>
         </section>
     )

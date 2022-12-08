@@ -32,8 +32,8 @@
 
     @include desktop {
 
-    &:hover {
-      color: red;
+      &:hover {
+        color: red;
       }
     }
 
@@ -45,49 +45,4 @@
       }
     }
   }
-
-  .arrow {
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 50px;
-    background: red;
-    border: 3px solid white;
-    width: 40px;
-    height: 40px;
-    z-index: 2;
-    position: fixed;
-    left: 4rem;
-    bottom: 4rem;
-    transition: 0.3s;
-
-    @include mobile {
-      left: 2rem;
-      bottom: 6rem;
-    }
-
-    &:hover {
-      padding-bottom: 2rem;
-
-      @include mobile {
-        &:hover {
-          padding-bottom: 0.5rem;
-        }
-
-        &:active {
-          padding-bottom: 2rem;
-        }
-      }
-
-      @include tablet {
-        &:hover {
-          padding-bottom: 0.5rem;
-        }
-
-        &:active {
-          padding-bottom: 2rem;
-        }
-      }
-    }
-  }
-
 }
