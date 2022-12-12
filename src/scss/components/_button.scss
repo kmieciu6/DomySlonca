@@ -6,7 +6,7 @@
   width: 8.4rem;
   height: 3rem;
   font-family: $font-main;
-  transition: 1s;
+  transition: .7s;
 
   &:hover {
     border-bottom: 2px solid $button-border;
@@ -16,5 +16,21 @@
     transition: 0s;
     color: $prima-color;
     border-bottom: 2px solid $prima-color;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: .7s;
+
+
+  &:hover {
+    color: $prima-color;
+  }
+
+  &:active {
+    transition: 0s;
+    color: $action-color;
   }
 }

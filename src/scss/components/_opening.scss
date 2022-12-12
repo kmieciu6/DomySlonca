@@ -1,5 +1,5 @@
 #opening {
-  background: linear-gradient(to bottom right, orange, cornsilk);
+  background: linear-gradient(to bottom, white, $accent-color);
 
   @include desktop {
     padding: 0 4rem;

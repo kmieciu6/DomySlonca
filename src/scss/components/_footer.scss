@@ -1,27 +1,75 @@
 .footer {
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: $footer-color;
+  background: linear-gradient(white, $footer-color);
+
+  .phone_mail {
+    display: flex;
+    justify-content: center;
+
+    a {
+      width: 12rem;
+      margin: 1rem;
+
+      p {
+        font-weight: 700;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    @include mobile {
+      align-items: center;
+      flex-direction: column;
+
+      a {
+        width: 10rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .adres {
+    display: flex;
+    justify-content: center;
+  }
+
+  .privacy {
+    display: flex;
+    justify-content: center;
+  }
 
   .links {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
+    img {
+      margin: 0 2rem;
+      width: 40px;
+      height: 40px;
+      filter: grayscale(100%);
+      transition: 0.7s;
+
+      &:hover {
+        filter: none;
+      }
+    }
   }
 
-  img {
-    width: 50px;
-    height: 50px;
-    filter: grayscale(100%);
-    transition: 0.5s;
+  .copyright {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
-    &:hover {
-      filter: none;
-    }
-
-    @include desktop {
-      width: 80px;
-      height: 80px;
+    a {
+      width: 12rem;
     }
   }
 }
