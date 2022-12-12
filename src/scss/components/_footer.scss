@@ -15,6 +15,7 @@
 
       p {
         font-weight: 700;
+        font-size: 1.3rem;
       }
 
       img {
@@ -47,6 +48,8 @@
   .links {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 
     img {
       margin: 0 2rem;
@@ -62,7 +65,6 @@
   }
 
   .copyright {
-    margin: 1rem 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
