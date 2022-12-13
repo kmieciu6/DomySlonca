@@ -4,11 +4,13 @@ import Footer from "./Footer";
 
 const Attractions = () => {
     return (
-        <section id='attractions'>
+        <>
             <Header/>
-            <h1>Atrakcje</h1>
+            <section id='attractions'>
+                <h1>Atrakcje</h1>
+            </section>
             <Footer/>
-        </section>
+        </>
     )
 }
 
