@@ -75,6 +75,10 @@
   .yurts_info {
     background: linear-gradient($accent-color, white);
 
+    .info_photo {
+      display: flex;
+    }
+
     h2 {
       text-align: center;
     }
