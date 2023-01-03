@@ -3,6 +3,10 @@ import Header from "./header/Header";
 import Footer from "./Footer";
 import CarouselYurts from "./CarouselYurts";
 import {Link as Scroll} from 'react-scroll';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faUserGroup, faMaximize, faShower, faBed} from "@fortawesome/free-solid-svg-icons";
+
+// import photo1 from "../assets/jurty1.jpeg";
 
 const Yurts = () => {
     return (
@@ -37,9 +41,31 @@ const Yurts = () => {
                     </Scroll>
                 </div>
                 <div className='yurts_info'>
-                    <div id='sun'>
+                    <div id='sun' className='yurta'>
                         <h2>Słońce</h2>
-                        <div className='info_photo'>
+                        <div className='info_logo'>
+                            <li>
+                                <FontAwesomeIcon icon={faUserGroup}/>
+                                <p>do 5 osób</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faMaximize}/>
+                                <p>35 m2</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faBed}/>
+                                <p>podwójne łóżko: 1</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faBed}/>
+                                <p>pojedyncze łóżko: 3</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faShower}/>
+                                <p>łazienka</p>
+                            </li>
+                        </div>
+                        <div className='info_photo c1'>
                             <p>
                                 Panuje w niej niesamowita jasność, właściwie niezależnie od pogody.<br/>
                                 Jurta stanowi jedno pomieszczenie o powierzchni 30m2 i wysokości 3,50m. Połączone
@@ -60,13 +86,44 @@ const Yurts = () => {
                                 Azji
                                 Środkowej – widać przez nią nocne niebo.
                             </p>
-                            <CarouselYurts/>
+                            <div className='carousel'>
+                                <CarouselYurts>
+
+                                    {/*<img*/}
+                                    {/*    src={photo1}*/}
+                                    {/*/>*/}
+                                </CarouselYurts>
+                            </div>
                         </div>
                     </div>
-                    <div id='wind'>
+                    <div id='wind' className='yurta'>
                         <h2>Wiatr</h2>
-                        <div className='info_photo'>
-                            <CarouselYurts/>
+                        <div className='info_logo'>
+                            <li>
+                                <FontAwesomeIcon icon={faUserGroup}/>
+                                <p>do 7 osób</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faMaximize}/>
+                                <p>35 m2</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faBed}/>
+                                <p>podwójne łóżko: 2</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faBed}/>
+                                <p>pojedyncze łóżko: 5</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faShower}/>
+                                <p>łazienka</p>
+                            </li>
+                        </div>
+                        <div className='info_photo c2'>
+                            <div className='carousel'>
+                                <CarouselYurts/>
+                            </div>
                             <p>
                                 Druga jurta stanęła tuż obok Jurty Słońce. Jej budowa to było nie lada wyzwanie i
                                 właściwie
@@ -81,19 +138,51 @@ const Yurts = () => {
                             </p>
                         </div>
                     </div>
-                    <div id='fire'>
+                    <div id='fire' className='yurta'>
                         <h2>Ogień</h2>
-                        <div className='info_photo'>
-                            <CarouselYurts/>
+                        <div className='info_logo'>
+                            <li>
+                                <FontAwesomeIcon icon={faUserGroup}/>
+                                <p>do 4 osób</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faMaximize}/>
+                                <p>30 m2</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faBed}/>
+                                <p>podwójne łóżko: 2</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon icon={faShower}/>
+                                <p>łazienka</p>
+                            </li>
+                        </div>
+                        <div className='info_photo c3'>
                             <p>
                                 Jurta zrobiona w stylu boho, posiada dwa łoża małżeńskie, posiada łazienkę...
                             </p>
+                            <div className='carousel'>
+                                <CarouselYurts/>
+                            </div>
                         </div>
                     </div>
-                    <div id='etno'>
+                    <div id='etno' className='yurta'>
                         <h2>Etno</h2>
-                        <div className='info_photo'>
+                        <div className='info_photo c4'>
+                            <div className='carousel'>
+                                <CarouselYurts/>
+                            </div>
                             <p>
+
+                                Jurta Ethno - na nią mieliśmy trochę inny pomysł. W środku nie znajdziecie mebli,
+                                wyposażona jest jedynie w oryginalne sprzęty. Dzięki temu, na podłodze może nocować do
+                                10 osób. Tutaj będą się działy przeróżne wydarzenia, imprezy czy warsztaty: joga, kursy,
+                                spotkania różnych grup czy imprezy rodzinne i towarzyskie.<br/>
+                                Serdecznie zachęcamy do jazdy konnej ! Początkujących nauczymy i spędzimy miło czas,
+                                natomiast dla osób zaawansowyanych w jazdę konną zabierzemy na przejażdżkę po naszych
+                                urokliwych teranach.<br/>
+                                <br/>
                                 Na ostatnią jurtę mieliśmy specjalny pomysł. Zupełnie inny od poprzednich. Udało się ją
                                 zbudować w trybie oryginalnym tj. w 3 dni od pierwszego ruchu ręki do zakończenia
                                 budowy.<br/>
@@ -106,7 +195,6 @@ const Yurts = () => {
                                 Do dyspozycji znajdująca się nieopodal kuchnia i węzeł sanitarny (prysznic, WC,
                                 umywalka).
                             </p>
-                            <CarouselYurts/>
                         </div>
                     </div>
                 </div>
