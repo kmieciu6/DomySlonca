@@ -104,11 +104,14 @@
     }
 
     .info_photo {
-      width: 80%;
       display: flex;
       text-align: justify;
       align-items: center;
       flex-direction: column;
+
+      @include desktop {
+        width: 80%;
+      }
 
       p {
         margin-top: 2rem;
@@ -173,6 +176,8 @@
   }
 
   p {
-    font-size: 1.2rem;
+    @include desktop {
+      font-size: 1.2rem;
+    }
   }
 }
