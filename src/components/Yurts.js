@@ -6,22 +6,37 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUserGroup, faMaximize, faShower, faBed} from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-bootstrap/Carousel";
 import sun_photo1 from "../assets/slonce1.jpeg";
-import sun_photo2 from "../assets/w_slonce.jpeg";
-import sun_photo3 from "../assets/slonce3.jpeg";
+import sun_photo2 from "../assets/w_slonce1.jpeg";
+import sun_photo3 from "../assets/w_slonce2.jpeg";
+import sun_photo4 from "../assets/w_slonce3.jpeg";
+import sun_photo5 from "../assets/w_slonce4.jpeg";
+import sun_photo6 from "../assets/slonce2.jpeg";
+import sun_photo7 from "../assets/w_slonce5.jpeg";
 
-import wind_photo1 from "../assets/jurty4.jpeg";
-import wind_photo2 from "../assets/jurty5.jpeg";
-import wind_photo3 from "../assets/jurty6.jpeg";
+import wind_photo1 from "../assets/wiatr1.jpeg";
+import wind_photo2 from "../assets/w_wiatr1.jpeg";
+import wind_photo3 from "../assets/w_wiatr2.jpeg";
+import wind_photo4 from "../assets/w_wiatr3.jpeg";
+import wind_photo5 from "../assets/w_wiatr4.jpeg";
+import wind_photo6 from "../assets/wiatr2.jpeg";
+import wind_photo7 from "../assets/w_wiatr5.jpeg";
+import wind_photo8 from "../assets/w_wiatr6.jpeg";
 
-import fire_photo1 from "../assets/jurty7.jpeg";
-import fire_photo2 from "../assets/jurty8.jpeg";
-import fire_photo3 from "../assets/kon1.jpeg";
+import fire_photo1 from "../assets/ogien1.jpeg";
+import fire_photo2 from "../assets/w_ogien1.jpeg";
+import fire_photo3 from "../assets/w_ogien2.jpeg";
+import fire_photo4 from "../assets/w_ogien3.jpeg";
+import fire_photo5 from "../assets/w_ogien4.jpeg";
 
-import etno_photo1 from "../assets/kon2.jpeg";
-import etno_photo2 from "../assets/kon3.jpeg";
-import etno_photo3 from "../assets/kon4.jpeg";
-
-// import _photo from "../assets/";
+import etno_photo1 from "../assets/etno1.jpeg";
+import etno_photo2 from "../assets/w_etno1.jpeg";
+import etno_photo3 from "../assets/w_etno2.jpeg";
+import etno_photo4 from "../assets/w_etno3.jpeg";
+import etno_photo5 from "../assets/w_etno4.jpeg";
+import etno_photo6 from "../assets/etno2.jpeg";
+import etno_photo7 from "../assets/w_etno5.jpeg";
+import etno_photo8 from "../assets/w_etno6.jpeg";
+import etno_photo9 from "../assets/w_etno7.jpeg";
 
 const Yurts = () => {
 
@@ -156,6 +171,42 @@ const Yurts = () => {
                                         <Carousel.Caption>
                                         </Carousel.Caption>
                                     </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={sun_photo4}
+                                            alt="Fourth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={sun_photo5}
+                                            alt="Fifth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={sun_photo6}
+                                            alt="Sixth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={sun_photo7}
+                                            alt="Seventh slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
                                 </Carousel>
                             </div>
                         </div>
@@ -214,7 +265,53 @@ const Yurts = () => {
                                         <Carousel.Caption>
                                         </Carousel.Caption>
                                     </Carousel.Item>
-                                </Carousel></div>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={wind_photo4}
+                                            alt="Fourth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={wind_photo5}
+                                            alt="Fifth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={wind_photo6}
+                                            alt="Sixth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={wind_photo7}
+                                            alt="Seventh slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={wind_photo8}
+                                            alt="Eight slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
                             <p>
                                 Druga jurta stanęła tuż obok Jurty Słońce. Jej budowa to było nie lada wyzwanie i
                                 właściwie
@@ -255,7 +352,12 @@ const Yurts = () => {
                         </div>
                         <div className='info_photo c3'>
                             <p>
-                                Jurta zrobiona w stylu boho, posiada dwa łoża małżeńskie, posiada łazienkę...
+                                Ta jurta oczaruje Was swoim boho stylem. Panuje w niej spokój i harmonia.<br/>
+                                <br/>
+                                Tutaj znajdziecie wytchnienie od miejskiego zgiełku, a wszystko przez szklaną kopułę -
+                                TONO, przez którą w jurcie można podziwiać gwiazdy. Jest ona całoroczna, ogrzewana
+                                piecykiem elektrycznym, który imituje prawdziwy kominek. Bezpośrednio w jurcie znajduje
+                                się piękna łazienka.
                             </p>
                             <div className='carousel'>
                                 <Carousel activeIndex={index3} onSelect={handleSelect3}>
@@ -286,7 +388,26 @@ const Yurts = () => {
                                         <Carousel.Caption>
                                         </Carousel.Caption>
                                     </Carousel.Item>
-                                </Carousel></div>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={fire_photo4}
+                                            alt="Fourth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={fire_photo5}
+                                            alt="Fifth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
                         </div>
                     </div>
                     <div id='etno' className='yurta'>
@@ -321,9 +442,63 @@ const Yurts = () => {
                                         <Carousel.Caption>
                                         </Carousel.Caption>
                                     </Carousel.Item>
-                                </Carousel></div>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={etno_photo4}
+                                            alt="Fourth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={etno_photo5}
+                                            alt="Fifth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={etno_photo6}
+                                            alt="Sixth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={etno_photo7}
+                                            alt="Seventh slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={etno_photo8}
+                                            alt="Eight slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={etno_photo9}
+                                            alt="Ninth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
                             <p>
-
                                 Jurta Ethno - na nią mieliśmy trochę inny pomysł. W środku nie znajdziecie mebli,
                                 wyposażona jest jedynie w oryginalne sprzęty. Dzięki temu, na podłodze może nocować
                                 do

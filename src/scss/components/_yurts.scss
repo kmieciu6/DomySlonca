@@ -39,23 +39,24 @@
         &:hover {
           opacity: 0.4;
           z-index: 1;
+          color: black;
         }
       }
 
       &:first-of-type .photo {
-        background: url("../../assets/jurty1.jpeg") center/cover;
+        background: url("../../assets/slonce.jpeg") center/cover;
       }
 
       &:nth-of-type(2) .photo {
-        background: url("../../assets/jurty2.jpeg") top/cover;
+        background: url("../../assets/wiatr.jpeg") top/cover;
       }
 
       &:nth-of-type(3) .photo {
-        background: url("../../assets/jurty3.jpeg") top/cover;
+        background: url("../../assets/ogien.jpeg") top/cover;
       }
 
       &:nth-of-type(4) .photo {
-        background: url("../../assets/jurty4.jpeg") top/cover;
+        background: url("../../assets/etno.jpeg") top/cover;
       }
 
       .text {
@@ -64,9 +65,12 @@
         justify-content: center;
         align-items: center;
         z-index: 1;
+        pointer-events: none;
+        color: black;
       }
 
       h3 {
+        font-size: 3rem;
         margin-bottom: 1rem;
       }
     }
@@ -104,7 +108,7 @@
       .carousel {
 
         @include desktop {
-          width: 500px;
+          width: 600px;
         }
 
         .w-100 {
