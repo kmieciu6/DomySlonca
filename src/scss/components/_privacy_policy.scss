@@ -1,21 +1,11 @@
 #privacy_policy {
+  background: linear-gradient(white, $accent-color, white);
 
   .info {
-
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-items: center;
-    }
-
-    .regulamin {
-      background: linear-gradient(white, $accent-color);
-    }
-
-    .policy {
-      background: linear-gradient($accent-color, white);
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 
     p {
       margin-bottom: 2rem;

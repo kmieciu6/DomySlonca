@@ -34,6 +34,9 @@ const StyledMenu = styled.nav`
           color: orange;
         }
       }
+      .res {
+        color: red;
+      }
     }
   }
 `
@@ -90,6 +93,7 @@ const Burger = ({open, setOpen}) => {
                     <Link to="/yurts">Nasze jurty</Link>
                     <Link to='/attractions'>Atrakcje</Link>
                     <Link to='/prices'>Cennik</Link>
+                    <Link to='/reserve' className='res'>Rezerwuj</Link>
                     <Link to='/contact'>Kontakt</Link>
                 </nav>
             </StyledMenu>

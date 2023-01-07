@@ -9,9 +9,9 @@ const Footer = () => {
     return (
         <section id='footer' className='footer'>
             <div className='phone_mail'>
-                <a href="tel:606740427">
+                <a href="tel:+48606740427">
                     <img src={icon_phone} alt="phone"/>
-                    <p>606 740 427</p>
+                    <p>+48 606 740 427</p>
                 </a>
                 <a href="mailto:domyslonca@gmail.com">
                     <img src={icon_mail} alt="mail"/>

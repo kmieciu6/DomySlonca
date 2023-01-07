@@ -33,3 +33,17 @@ a {
     color: $action-color;
   }
 }
+
+.res {
+  color: $action-color;
+
+  &:hover {
+    border-bottom: 2px solid $action-color;
+  }
+
+  &:active {
+    transition: 0s;
+    color: $prima-color;
+    border-bottom: 2px solid $prima-color;
+  }
+}

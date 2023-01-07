@@ -61,7 +61,7 @@ const Yurts = () => {
     const handleSelect4 = (selectedIndex) => {
         setIndex4(selectedIndex);
     };
-    
+
     return (
         <>
             <PreLoader/>
@@ -121,7 +121,7 @@ const Yurts = () => {
                         </div>
                         <div className='info_photo c1'>
                             <p>
-                                Jurta Słońce - Panuje w niej niesamowita jasność, właściwie niezależnie od pogody.<br/>
+                                Jurta Słońce - panuje w niej niesamowita jasność, właściwie niezależnie od pogody.<br/>
                                 Jurta stanowi jedno pomieszczenie o powierzchni 30m2 i wysokości 3,50m. Połączone
                                 łącznikiem
                                 z łazienką. Wyposażyliśmy ją w komplet mebli dobranych na wzór oryginalnych, ręcznie
@@ -316,7 +316,7 @@ const Yurts = () => {
                                 </Carousel>
                             </div>
                             <p>
-                                Jurta Wiatr - Jej budowa to było nie lada wyzwanie i
+                                Jurta Wiatr - jej budowa to było nie lada wyzwanie i
                                 właściwie
                                 powinniśmy ją nazwać WICHER. Właśnie taka pogoda panowała w czasie jej montażu.
                                 Niemniej
@@ -355,7 +355,7 @@ const Yurts = () => {
                         </div>
                         <div className='info_photo c3'>
                             <p>
-                                Jurta Ogień - Ta jurta oczaruje Was swoim boho stylem. Panuje w niej spokój i
+                                Jurta Ogień - ta jurta oczaruje Was swoim boho stylem. Panuje w niej spokój i
                                 harmonia.<br/>
                                 <br/>
                                 Tutaj znajdziecie wytchnienie od miejskiego zgiełku, a wszystko przez szklaną kopułę -
@@ -503,12 +503,12 @@ const Yurts = () => {
                                 </Carousel>
                             </div>
                             <p>
-                                Jurta Etno - W środku nie znajdziecie mebli,
+                                Jurta Etno - w środku nie znajdziecie mebli,
                                 wyposażona jest jedynie w oryginalne sprzęty. Dzięki temu, na podłodze może nocować
-                                do
-                                10 osób. Tutaj będą się działy przeróżne wydarzenia, imprezy czy warsztaty: joga,
-                                kursy,
-                                spotkania różnych grup czy imprezy rodzinne i towarzyskie.
+                                do 10 osób.
+                                Tutaj odbywają się przeróżne wydarzenia, imprezy czy warsztaty: joga, kursy,
+                                spotkania różnych grup, imprezy rodzinne i towarzyskie -
+                                możliwość wstawienia do jurty stołów.
                             </p>
                         </div>
                     </div>
