@@ -1,5 +1,5 @@
 import React from "react";
-import MyComponent from "./Loaded";
+import PreLoader from "./PreLoader";
 import Header from './header/Header';
 import Opening from "./Opening";
 import Video from "./Video";
@@ -9,7 +9,7 @@ import Footer from "./Footer";
 const Home = () => {
     return (
         <>
-            <MyComponent/>
+            <PreLoader/>
             <Header/>
             <Opening/>
             <section id='home'>

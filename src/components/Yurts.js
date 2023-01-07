@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import MyComponent from "./Loaded";
+import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
 import {Link as Scroll} from 'react-scroll';
@@ -64,7 +64,7 @@ const Yurts = () => {
     
     return (
         <>
-            <MyComponent/>
+            <PreLoader/>
             <Header/>
             <section id='yurts'>
                 <h1>Nasze jurty</h1>

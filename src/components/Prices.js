@@ -1,12 +1,12 @@
 import React from "react";
-import MyComponent from "./Loaded";
+import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
 
 const Prices = () => {
     return (
         <>
-            <MyComponent/>
+            <PreLoader/>
             <Header/>
             <section id='prices'>
                 <h1>Cennik</h1>

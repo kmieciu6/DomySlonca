@@ -1,5 +1,5 @@
 import React from "react";
-import MyComponent from "./Loaded";
+import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
 import ImageGallery from 'react-image-gallery';
@@ -112,7 +112,7 @@ const Attractions = () => {
 
     return (
         <>
-            <MyComponent/>
+            <PreLoader/>
             <Header/>
             <section id='attractions'>
                 <h1>Czas wolny</h1>
@@ -121,7 +121,29 @@ const Attractions = () => {
                 </div>
                 <div className='att_text'>
                     <p>
-                        Jakiś tekst
+                        Jesteśmy w Sudetach, a to oznacza jedno: malownicze góry, błędne skały, stoki narciarskie,
+                        górskie rzeki, tajemnicze podziemia i sztolnie z bogatą historią, zabytki przyrody i
+                        architektury, single tracki. Tutaj każdy znajdzie coś dla siebie, nieważne czy lubi wspinaczki,
+                        przejażdżki rowerowe, konne, zwiedzanie, leniuchowanie czy narty.<br/>
+                        <br/>
+                        Na terenie glampingu znajduje się grill, tandyr, miejsce na ognisko, balia, sauna oraz strefa
+                        odpoczynku, taras z hamakami i poduszkami, z którego można podziwiać przepiękne góry.<br/>
+                        <br/>
+                        Tak jak w dalekiej Azji, same jurty nie posiadają własnej kuchni. Najczęściej cała wioska ma
+                        wspólne ognisko, gdzie przyrządza jedzenie. U nas jest bardziej nowocześnie, kuchnia znajduje
+                        się w kontenerze sanitarnym i jest wyposażona we wszystkie niezbędne sprzęty do gotowania:<br/>
+                        -kuchenka elektryczna<br/>
+                        -szafki<br/>
+                        -naczynia<br/>
+                        -lodówka<br/>
+                        -zlew<br/>
+                        -mały stolik.<br/>
+                        <br/>
+                        A co dla dla dzieci?<br/>
+                        Kto marzy o wakacjach w mongolskiej jurcie, ręka do góry! Chyba nie ma takiego dzieciaka, które
+                        nie chciałoby spędzić nocy w ogromnym namiocie z widokiem na niebo. Nasze jurty są przyjazne
+                        rodzinom z dziećmi. Mamy tu plac zabaw i ogród, w którym można bawić się do upadłego. I są też
+                        zwierzaki, czekające na głaskanie i psoty.
                     </p>
                 </div>
             </section>

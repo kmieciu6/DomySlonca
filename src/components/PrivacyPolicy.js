@@ -1,10 +1,12 @@
 import React from "react";
+import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
 
 const PrivacyPolicy = () => {
     return (
         <>
+            <PreLoader/>
             <Header/>
             <section id='privacy_policy'>
                 <div className='info'>
