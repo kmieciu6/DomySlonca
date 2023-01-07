@@ -131,13 +131,7 @@ const Attractions = () => {
                         <br/>
                         Tak jak w dalekiej Azji, same jurty nie posiadają własnej kuchni. Najczęściej cała wioska ma
                         wspólne ognisko, gdzie przyrządza jedzenie. U nas jest bardziej nowocześnie, kuchnia znajduje
-                        się w kontenerze sanitarnym i jest wyposażona we wszystkie niezbędne sprzęty do gotowania:<br/>
-                        -kuchenka elektryczna<br/>
-                        -szafki<br/>
-                        -naczynia<br/>
-                        -lodówka<br/>
-                        -zlew<br/>
-                        -mały stolik.<br/>
+                        się w kontenerze sanitarnym i jest w pełni wyposażona.<br/>
                         <br/>
                         A co dla dla dzieci?<br/>
                         Kto marzy o wakacjach w mongolskiej jurcie, ręka do góry! Chyba nie ma takiego dzieciaka, które

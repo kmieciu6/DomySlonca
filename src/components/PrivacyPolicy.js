@@ -1,16 +1,14 @@
 import React from "react";
-import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
 
 const PrivacyPolicy = () => {
     return (
         <>
-            <PreLoader/>
             <Header/>
             <section id='privacy_policy'>
                 <div className='info'>
-                    <div>
+                    <div className='regulamin'>
                         <h1>Regulamin</h1>
                         <p>1. Zakwaterowanie od godziny 15:00, wykwaterowanie do godziny 12:00.<br/>
                             2. Cisza nocna obowiązuje w godz. 22:00 – 06:00. Wyjątkiem jest Sylwester.<br/>
@@ -64,7 +62,7 @@ const PrivacyPolicy = () => {
                             wymiarze kosztów jej usunięcia, w dniu zwrotu
                             jurty.</p>
                     </div>
-                    <div>
+                    <div className='policy'>
                         <h1>Polityka prywatności</h1>
                         <p>Administrator danych osobowych<br/>
                             Administratorem Danych Osobowych jest DOMY SŁOŃCA z siedzibą w Jaszkowej Dolnej 18

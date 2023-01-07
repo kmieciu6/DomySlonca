@@ -1,12 +1,10 @@
 import React from "react";
-import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
 
 const Contact = () => {
     return (
         <>
-            <PreLoader/>
             <Header/>
             <section id='contact'>
                 <h1>Kontakt</h1>

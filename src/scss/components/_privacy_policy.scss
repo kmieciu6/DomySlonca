@@ -1,21 +1,30 @@
 #privacy_policy {
 
   .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     div {
-      max-width: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+    }
 
-      @include desktop {
-        max-width: 70%;
-      }
+    .regulamin {
+      background: linear-gradient(white, $accent-color);
+    }
+
+    .policy {
+      background: linear-gradient($accent-color, white);
     }
 
     p {
       margin-bottom: 2rem;
       text-align: justify;
+      width: 90%;
+
+      @include desktop {
+        width: 70%;
+      }
     }
 
     h1 {
