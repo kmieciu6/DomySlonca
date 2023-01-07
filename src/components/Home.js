@@ -14,10 +14,17 @@ const Home = () => {
             <Opening/>
             <section id='home'>
                 <div className='home_info'>
-                    <h2>Odnajdź klimat Azji Środkowej
-                        w sercu Kotliny Kłodzkiej</h2>
+                    <h2>
+                        Odnajdź klimat Azji Środkowej
+                        w sercu Kotliny Kłodzkiej
+                    </h2>
                     <div className='home_text'>
-                        <p>Azja Środkowa w sercu Kotliny Kłodzkiej? Brzmi nieprawdopodobnie, a jednak.<br/>
+                        <p>
+                            <h3>
+                                Przeczytaj o swojej niezapomnianej nocy!
+                            </h3>
+                            <br/>
+                            Azja Środkowa w sercu Kotliny Kłodzkiej? Brzmi nieprawdopodobnie, a jednak.<br/>
                             <br/>
                             Oryginalne, ręcznie wykonane, całoroczne jurty przywiezione z Bajkału zapewnią
                             niepowtarzalny
@@ -30,7 +37,12 @@ const Home = () => {
                             Zapraszamy Was więc do 4 jurt, z których w ciągu dnia roztacza się widok na Masyw Śnieżnika
                             i Czarną Górę, a w nocy można podziwiać gwieździste niebo widoczne przez okno w kopule.
                             Gwarantujemy
-                            niezapomniane wrażenia!
+                            niezapomniane wrażenia!<br/>
+                            <br/>
+                            <h3>
+                                Gorąco zapraszamy do odwiedzin naszego glampingu gdzie przez cały rok świeci słońce Azji
+                                Środkowej...
+                            </h3>
                         </p>
                     </div>
                     <Video embedId="09_niRBvLPc"/>

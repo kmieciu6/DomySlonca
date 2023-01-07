@@ -4,6 +4,7 @@ import facebook_logo from "../assets/logo_facebook.png";
 import {Link} from "react-router-dom";
 import icon_phone from '../assets/phone.svg';
 import icon_mail from '../assets/mail.svg';
+import practices from '../assets/dobre_praktyki.png'
 
 const Footer = () => {
     return (
@@ -22,7 +23,7 @@ const Footer = () => {
                 <a href="https://www.google.com/maps/place/Domy+słońca/@50.41759,16.664003,17z/data=!3m1!4b1!4m8!3m7!1s0x470e17874133a405:0xaec2fb5f8ca68b0b!5m2!4m1!1i2!8m2!3d50.41759!4d16.6661917">
                     <p>Zobacz mapę<br/>
                         Jaszkowa Dolna 18<br/>
-                        57-312 Jaszkowa Dolna</p>
+                        57-300 Kłodzko</p>
                 </a>
             </div>
             <div className='privacy'>
@@ -38,6 +39,7 @@ const Footer = () => {
                     <img src={instagram_logo} alt="instagram" className='instagram'/>
                 </a>
             </div>
+                <img className='good_practices' src={practices} alt="dobre praktyki"/>
             <div className='copyright'>
                 <p>Copyright 2023</p>
                 <a href="https://github.com/kmieciu6?tab=repositories">
