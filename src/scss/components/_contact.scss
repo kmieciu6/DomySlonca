@@ -4,4 +4,20 @@
     margin-top: 2rem;
     text-align: center;
   }
+
+  .form {
+    padding-top: 3rem;
+    background: linear-gradient(white, $accent-color);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .aaa {
+    background: linear-gradient($accent-color, white);
+  }
 }
