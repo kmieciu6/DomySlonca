@@ -1,4 +1,5 @@
 import React from "react";
+import MyComponent from "./Loaded";
 import Header from './header/Header';
 import Opening from "./Opening";
 import Video from "./Video";
@@ -8,6 +9,7 @@ import Footer from "./Footer";
 const Home = () => {
     return (
         <>
+            <MyComponent/>
             <Header/>
             <Opening/>
             <section id='home'>

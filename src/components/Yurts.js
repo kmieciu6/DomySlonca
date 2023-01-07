@@ -1,10 +1,12 @@
 import React, {useState} from "react";
+import MyComponent from "./Loaded";
 import Header from "./header/Header";
 import Footer from "./Footer";
 import {Link as Scroll} from 'react-scroll';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUserGroup, faMaximize, faShower, faBed} from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-bootstrap/Carousel";
+
 import sun_photo1 from "../assets/slonce1.jpeg";
 import sun_photo2 from "../assets/w_slonce1.jpeg";
 import sun_photo3 from "../assets/w_slonce2.jpeg";
@@ -62,6 +64,7 @@ const Yurts = () => {
     
     return (
         <>
+            <MyComponent/>
             <Header/>
             <section id='yurts'>
                 <h1>Nasze jurty</h1>

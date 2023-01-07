@@ -1,4 +1,5 @@
 import React from "react";
+import MyComponent from "./Loaded";
 import Header from "./header/Header";
 import Footer from "./Footer";
 import ImageGallery from 'react-image-gallery';
@@ -111,6 +112,7 @@ const Attractions = () => {
 
     return (
         <>
+            <MyComponent/>
             <Header/>
             <section id='attractions'>
                 <h1>Czas wolny</h1>
