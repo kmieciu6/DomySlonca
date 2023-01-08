@@ -10,8 +10,12 @@ const Prices = () => {
                 <h1>Cennik</h1>
                 <div className='price_text'>
                     <p>
-                        Sezon niski – 450zl/doba<br/>
-                        Sezon wysoki - 500zł/doba<br/>
+                        Sezon niski – 450 zł/doba<br/>
+                        (od kiedy do kiedy)?<br/>
+                        <br/>
+                        Sezon wysoki - 500 zł/doba<br/>
+                        (od kiedy do kiedy)?<br/>
+                        <br/>
                         Akceptujemy bony turystyczne<br/>
                         <br/>
                         <br/>

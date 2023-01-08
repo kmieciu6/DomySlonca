@@ -58,6 +58,8 @@
   .adres {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .privacy {
@@ -87,6 +89,7 @@
     .good_practices {
       width: 100px;
       height: 100px;
+      margin-bottom: 1rem;
     }
 
   .copyright {

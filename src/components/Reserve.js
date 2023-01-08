@@ -7,7 +7,14 @@ const Reserve = () => {
         <>
             <Header/>
             <section id='reserve'>
-                
+                <h1>
+                    Zarezerwuj swój pobyt
+                </h1>
+                <div>
+                    <p>
+                        Silnik rezerwacyjny!!!
+                    </p>
+                </div>
             </section>
             <Footer/>
         </>
