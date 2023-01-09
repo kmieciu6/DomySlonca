@@ -23,9 +23,11 @@ const Footer = () => {
             <div className='adres'>
                 <img className='good_practices' src={practices} alt="dobre praktyki"/>
                 <a href="https://www.google.com/maps/place/Domy+słońca/@50.41759,16.664003,17z/data=!3m1!4b1!4m8!3m7!1s0x470e17874133a405:0xaec2fb5f8ca68b0b!5m2!4m1!1i2!8m2!3d50.41759!4d16.6661917">
-                    <p>Zobacz mapę<br/>
+                    <p>
+                        <b>Zobacz mapę</b><br/>
                         Jaszkowa Dolna 18<br/>
-                        57-300 Kłodzko</p>
+                        57-300 Kłodzko
+                    </p>
                 </a>
             </div>
             <div className='privacy'>
@@ -47,7 +49,9 @@ const Footer = () => {
             <div className='copyright'>
                 <p>Copyright 2023</p>
                 <a href="https://github.com/kmieciu6?tab=repositories">
-                    <p>Made by Jakub Kmiecik</p>
+                    <p>
+                        Made by <b>Jakub Kmiecik</b>
+                    </p>
                 </a>
             </div>
         </section>
