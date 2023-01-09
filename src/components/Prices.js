@@ -24,7 +24,9 @@ const Prices = () => {
                         • Doba hotelowa rozpoczyna się o godz. 15:00 w dniu przyjazdu<br/>
                         • Pokoje należy opuścić do godziny 12:00 w dniu wyjazdu<br/>
                         • Balia płatna 150zł<br/>
-                        • Sauna płatna 150zł
+                        • Sauna płatna 150zł<br/>
+                        <br/>
+                        10% rabatu dla osób podróżujących motocyklami.<br/>
                     </p>
                     <h1>Zadatek</h1>
                     <p>

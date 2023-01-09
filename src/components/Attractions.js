@@ -24,7 +24,6 @@ import photo17 from "../assets/kon5.jpeg"
 import photo18 from "../assets/zabawa1.jpeg"
 import photo19 from "../assets/zabawa2.jpeg"
 import photo20 from "../assets/zabawa3.jpeg"
-import photo21 from "../assets/gory.jpeg"
 
 const Attractions = () => {
 
@@ -108,11 +107,7 @@ const Attractions = () => {
         {
             original: photo20,
             thumbnail: photo20,
-        },
-        {
-            original: photo21,
-            thumbnail: photo21,
-        },
+        }
     ];
 
     return (
