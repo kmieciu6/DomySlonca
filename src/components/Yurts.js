@@ -20,15 +20,18 @@ import wind_photo2 from "../assets/w_wiatr1.jpeg";
 import wind_photo3 from "../assets/w_wiatr2.jpeg";
 import wind_photo4 from "../assets/w_wiatr3.jpeg";
 import wind_photo5 from "../assets/w_wiatr4.jpeg";
-import wind_photo6 from "../assets/wiatr2.jpeg";
-import wind_photo7 from "../assets/w_wiatr5.jpeg";
+import wind_photo6 from "../assets/w_wiatr5.jpeg";
+import wind_photo7 from "../assets/wiatr2.jpeg";
 import wind_photo8 from "../assets/w_wiatr6.jpeg";
+import wind_photo9 from "../assets/w_wiatr7.jpeg";
+import wind_photo10 from "../assets/w_wiatr8.jpeg";
 
 import fire_photo1 from "../assets/ogien1.jpeg";
 import fire_photo2 from "../assets/w_ogien1.jpeg";
 import fire_photo3 from "../assets/w_ogien2.jpeg";
 import fire_photo4 from "../assets/w_ogien3.jpeg";
 import fire_photo5 from "../assets/w_ogien4.jpeg";
+import fire_photo6 from "../assets/w_ogien5.jpeg";
 
 import etno_photo1 from "../assets/etno1.jpeg";
 import etno_photo2 from "../assets/w_etno1.jpeg";
@@ -66,7 +69,7 @@ const Yurts = () => {
         <>
             <PreLoader/>
             <Header/>
-            <section id='yurts'>
+            <section id='yurts' className='pages'>
                 <h1>Nasze jurty</h1>
                 <div className='yurts'>
                     <Scroll to={'sun'} smooth duration={500} className='yurt'>
@@ -313,6 +316,24 @@ const Yurts = () => {
                                         <Carousel.Caption>
                                         </Carousel.Caption>
                                     </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={wind_photo9}
+                                            alt="Eight slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={wind_photo10}
+                                            alt="Eight slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
                                 </Carousel>
                             </div>
                             <p>
@@ -406,6 +427,15 @@ const Yurts = () => {
                                             className="d-block w-100"
                                             src={fire_photo5}
                                             alt="Fifth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={fire_photo6}
+                                            alt="Sixth slide"
                                         />
                                         <Carousel.Caption>
                                         </Carousel.Caption>

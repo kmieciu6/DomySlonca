@@ -6,11 +6,11 @@ const Prices = () => {
     return (
         <>
             <Header/>
-            <section id='prices'>
+            <section id='prices' className='pages'>
                 <h1>Cennik</h1>
                 <div className='price_text'>
                     <p>
-                        Sezon niski – 450 zł/doba<br/>
+                        Sezon niski – 450 zł/doba<br/>s
                         (od kiedy do kiedy)?<br/>
                         <br/>
                         Sezon wysoki - 500 zł/doba<br/>

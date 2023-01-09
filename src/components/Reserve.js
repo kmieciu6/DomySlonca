@@ -6,7 +6,7 @@ const Reserve = () => {
     return (
         <>
             <Header/>
-            <section id='reserve'>
+            <section id='reserve' className='pages'>
                 <h1>
                     Zarezerwuj swój pobyt
                 </h1>

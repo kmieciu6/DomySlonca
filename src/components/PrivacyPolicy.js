@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     return (
         <>
             <Header/>
-            <section id='privacy_policy'>
+            <section id='privacy_policy' className='pages'>
                 <div className='info'>
                     <h1>Regulamin</h1>
                     <p>1. Zakwaterowanie od godziny 15:00, wykwaterowanie do godziny 12:00.<br/>

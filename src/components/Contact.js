@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <>
             <Header/>
-            <section id='contact'>
+            <section id='contact' className='pages'>
                 <h1>Kontakt</h1>
                 <form>
                     <label>
