@@ -1,7 +1,8 @@
 import React from "react";
-import instagram_logo from "../assets/logo_instagram.png";
-import facebook_logo from "../assets/logo_facebook.png";
 import {Link} from "react-router-dom";
+import facebook_logo from "../assets/logo_facebook.png";
+import google_logo from "../assets/logo_google.png";
+import instagram_logo from "../assets/logo_instagram.png";
 import icon_phone from '../assets/phone.svg';
 import icon_mail from '../assets/mail.svg';
 import practices from '../assets/dobre_praktyki.png'
@@ -38,6 +39,9 @@ const Footer = () => {
                 </a>
                 <a href="https://www.instagram.com/domyslonca/">
                     <img src={instagram_logo} alt="instagram" className='instagram'/>
+                </a>
+                <a href="https://www.google.com/travel/hotels/domy%20słońca%20opinie%20google/entity/CgsIi5aa5fjrvuGuARAB/reviews?q=domy%20słońca%20opinie%20google&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4597339%2C4718358%2C4723331%2C4731329%2C4754388%2C4757164%2C4814050%2C4861688%2C4864715%2C4874190%2C4879519%2C4886082%2C4886480%2C4893075%2C4902277%2C4903082%2C4903556%2C4906050%2C4920622%2C4926165&hl=pl-PL&gl=pl&cs=1&ssta=1&rp=EIuWmuX4677hrgEQi5aa5fjrvuGuATgCQABIAcABAg&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAESABpJCisSJzIlMHg0NzBlMTc4NzQxMzNhNDA1OjB4YWVjMmZiNWY4Y2E2OGIwYhoAEhoSFAoHCOcPEAEYChIHCOcPEAEYCxgBMgIQACoJCgU6A1BMThoA">
+                    <img src={google_logo} alt="google" className='google'/>
                 </a>
             </div>
             <div className='copyright'>
