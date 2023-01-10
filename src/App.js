@@ -20,7 +20,7 @@ function App() {
                     <Route path='/prices' element={<Prices/>}/>
                     <Route path='/reserve' element={<Reserve/>}/>
                     <Route path='/contact' element={<Contact/>}/>
-                    <Route path='/privacy_policy/' element={<PrivacyPolicy/>}/>
+                    <Route path='privacy_policy' element={<PrivacyPolicy/>}/>
                 </Routes>
             </HashRouter>
         </>
