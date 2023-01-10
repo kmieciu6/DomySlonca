@@ -18,6 +18,7 @@
     text-align: justify;
     padding-top: 2rem;
     width: 90%;
+    max-width: 1000px;
 
     @include desktop {
       width: 70%;
