@@ -13,22 +13,21 @@ const Prices = () => {
                 <h1>Cennik</h1>
                 <h3>Minimum 2 doby</h3>
                 <div className='price_text'>
+                    <h5><b>Sezon wysoki</b></h5><br/>
                     <div className='seasons price'>
                         <p>
-                            <b>Sezon wysoki</b><br/>
-                            grudzień <FontAwesomeIcon icon={faArrowRightLong}/> luty<br/>
                             czerwiec <FontAwesomeIcon icon={faArrowRightLong}/> wrzesień<br/>
+                            grudzień <FontAwesomeIcon icon={faArrowRightLong}/> luty<br/>
                         </p>
-                        <Link to='/reserve'><FontAwesomeIcon icon={faCalendarDays} className='calendar'/></Link>
+                        <Link to='/reserve'><FontAwesomeIcon icon={faCalendarDays} className='calendar first'/></Link>
                         <h4>500 zł/doba</h4>
                     </div>
                     <span/>
+                    <h5><b>Sezon niski</b></h5><br/>
                     <div className='seasons price'>
                         <p>
-                            <br/>
-                            <b>Sezon niski</b><br/>
-                            marzec <FontAwesomeIcon icon={faArrowRightLong}/> maj<br/>
                             październik <FontAwesomeIcon icon={faArrowRightLong}/> listopad<br/>
+                            marzec <FontAwesomeIcon icon={faArrowRightLong}/> maj<br/>
                         </p>
                         <Link to='/reserve'><FontAwesomeIcon icon={faCalendarDays} className='calendar second'/></Link>
                         <h4>450 zł/doba</h4>
@@ -40,30 +39,34 @@ const Prices = () => {
                     <div className='information price'>
                         <h3>Informacje</h3>
                         <p>
-                            Doba hotelowa rozpoczyna się o godz. 15:00 w dniu przyjazdu<br/>
-                            Pokoje należy opuścić do godziny 12:00 w dniu wyjazdu<br/>
+                            Doba hotelowa rozpoczyna się o godz. 15:00 w dniu przyjazdu.<br/>
+                            Pokoje należy opuścić do godziny 12:00 w dniu wyjazdu.<br/>
                         </p>
                     </div>
                     <div className='additional price'>
                         <h3>Dodatki</h3>
                         <p>
-                            Balia płatna – 150 zł<br/>
-                            Sauna płatna – 150 zł<br/>
-                            Jazdy konne – do umówienia na miejscu lub przez telefon<br/>
-                            Przejażdżki motocyklowe – do umówienia na miejscu lub przez telefon<br/>
+                            <li>Balia płatna – 150 zł</li>
+                            <li>Sauna płatna – 150 zł<br/></li>
+                            <li>Jazdy konne – do umówienia na miejscu lub przez telefon<br/></li>
+                            <li>Przejażdżki motocyklowe – do umówienia na miejscu lub przez telefon<br/></li>
                             <br/>
-                            10% rabatu dla osób podróżujących motocyklami.<br/>
+                            <li>10% rabatu dla osób podróżujących motocyklami.<br/></li>
                         </p>
                     </div>
                     <div className='deposit price'>
                         <h3>Zadatek</h3>
                         <p>
                             W celu potwierdzenia rezerwacji należy wpłacić zadatek w wysokość 30%<br/>
-                            <br/>
+                        </p>
+                        <p>
+                            <span>
                             Domy Słońca Marek Kmiecik<br/>
                             Jaszkowa Dolna 18 57-312<br/>
                             Nr rachunku bankowego: 54 1090 2385 0000 0001 4493 6234<br/>
-                            <br/>
+                            </span>
+                        </p>
+                        <p>
                             Jeśli za pobyt ma zostać wystawiona faktura, prosimy o poinformowaniu takiej informacji w
                             tytule
                             przelewu z podaniem nazwy firmy oraz numerem NIP.

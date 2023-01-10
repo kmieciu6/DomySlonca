@@ -18,6 +18,18 @@
     }
   }
 
+  h5 {
+    font-size: 1.1rem;
+
+    @include desktop {
+      font-size: 1.6rem;
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
+
   .price_text {
     display: flex;
     flex-direction: column;
@@ -39,6 +51,10 @@
       align-items: center;
       justify-content: space-between;
 
+      p {
+        line-height: 2;
+      }
+
       .calendar {
         font-size: 3rem;
         transition: 1s;
@@ -52,8 +68,12 @@
         }
       }
 
+      .first {
+        margin-left: -2rem;
+      }
+
       .second {
-        margin-left: -0.8rem;
+        margin-left: -2.5rem;
       }
     }
 
@@ -72,11 +92,28 @@
     .bon {
       margin-bottom: 3rem;
       text-align: center;
-      margin-top: 1rem;
     }
 
-    p {
-      text-align: justify;
+    .information {
+      margin-top: 3rem;
+    }
+
+    .additional {
+      margin-top: 3rem;
+    }
+
+    .deposit {
+      margin-top: 3rem;
+
+      p:nth-of-type(2) {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 1rem;
+
+        @include mobile {
+          font-size: 0.9rem;
+        }
+      }
     }
   }
 }
