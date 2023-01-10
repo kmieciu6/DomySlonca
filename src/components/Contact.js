@@ -16,6 +16,10 @@ const Contact = () => {
                         <input type='name' name='name' className='input' placeholder='imię i nazwisko'/>
                         <h5>Tekst</h5>
                         <textarea type='text' name='text' className='input' placeholder='Treść wiadomości' rows={5}/>
+                        <div className='checkbox_agree'>
+                            <input type="checkbox" id="agree" name="agree"/>
+                            <label htmlFor="agree"><p>Wyrażam zgodę na przetwarzanie danych osobowych.</p></label>
+                        </div>
                     </label>
                     <input type="submit" className='button' value="Wyślij"/>
                 </form>
