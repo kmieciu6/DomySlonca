@@ -19,6 +19,7 @@
       p {
         text-align: justify;
         width: 90%;
+        max-width: 1000px;
 
         @include desktop {
           width: 50%;
@@ -27,34 +28,3 @@
     }
   }
 }
-
-//{/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-//<figure><img src={home_photo1} alt="photo"/></figure>
-
-//figure {
-//  width: 300px;
-//  margin: 0;
-//  padding: 0;
-//  background: #fff;
-//  overflow: hidden;
-//
-//  img {
-//    width: 300px;
-//    -webkit-transform: scale(1);
-//    transform: scale(1);
-//    -webkit-transition: .7s ease-in-out;
-//    transition: .7s ease-in-out;
-//
-//    &:active {
-//      -webkit-transform: scale(1.2);
-//      transform: scale(1.2);
-//    }
-//
-//    @include desktop {
-//      &:hover {
-//        -webkit-transform: scale(1.2);
-//        transform: scale(1.2);
-//      }
-//    }
-//  }
-//}
