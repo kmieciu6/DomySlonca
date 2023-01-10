@@ -50,18 +50,17 @@ a {
 
 .button {
   font-size: 1.2rem;
-  padding: 1rem 5rem;
-  border: 2px solid black;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px orange;
 
   @include desktop {
     font-size: 1.6rem;
-    padding: 2rem 5rem;
-
+    padding: 1rem 3rem;
   }
 
   &:hover {
     color: $accent-color;
-    background: $action-color;
+    border-radius: 75% 0;
   }
-
 }

@@ -188,7 +188,15 @@
   }
 
   .button {
-    margin-top: 1rem;
     margin-bottom: 3rem;
+    background: $button-yurts;
+
+    @include desktop {
+      margin-top: 2rem;
+    }
+
+    &:hover {
+      background: $action-color;
+    }
   }
 }
