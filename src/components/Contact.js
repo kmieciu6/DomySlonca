@@ -11,13 +11,13 @@ const Contact = () => {
                 <form>
                     <label>
                         <h5>Email</h5>
-                        <input type='email' name='email' placeholder='Jan Kowalski'/>
+                        <input type='email' name='email' className='input' placeholder='twój@email.com'/>
                         <h5>Imię i nazwisko</h5>
-                        <input type='name' name='name' placeholder='mail@xyz.com'/>
+                        <input type='name' name='name' className='input' placeholder='imię i nazwisko'/>
                         <h5>Tekst</h5>
-                        <textarea type='text' name='text' placeholder='Proszę zamieścić wiadomość' rows={5}/>
+                        <textarea type='text' name='text' className='input' placeholder='Treść wiadomości' rows={5}/>
                     </label>
-                    <input type="submit" value="Wyślij"/>
+                    <input type="submit" className='button' value="Wyślij"/>
                 </form>
             </section>
             <Footer/>
