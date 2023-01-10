@@ -31,7 +31,15 @@ const Footer = () => {
                 </a>
             </div>
             <div className='privacy'>
-                <Link to="/privacy_policy">
+                <Link
+                    to="/privacy_policy"
+                    onClick={() => {
+                        window.scroll({
+                            top: 0,
+                            left: 0,
+                            behavior: "smooth",
+                        });
+                    }}>
                     <p>Regulamin i polityka prywatności</p>
                 </Link>
             </div>
