@@ -1,7 +1,6 @@
 #yurts {
 
   h1 {
-    margin-top: 2rem;
     text-align: center;
   }
 
@@ -189,14 +188,9 @@
 
   .button {
     margin-bottom: 3rem;
-    background: $button-yurts;
 
     @include desktop {
       margin-top: 2rem;
-    }
-
-    &:hover {
-      background: $action-color;
     }
   }
 }
