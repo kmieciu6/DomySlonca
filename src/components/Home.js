@@ -20,10 +20,10 @@ const Home = () => {
                         w sercu Kotliny Kłodzkiej
                     </h2>
                     <div className='home_text'>
+                        <h3>
+                            Przeczytaj o swojej niezapomnianej nocy!
+                        </h3>
                         <p>
-                            <h3>
-                                Przeczytaj o swojej niezapomnianej nocy!
-                            </h3>
                             <br/>
                             Azja Środkowa w sercu Kotliny Kłodzkiej? Brzmi nieprawdopodobnie, a jednak.<br/>
                             <br/>
@@ -39,12 +39,11 @@ const Home = () => {
                             i Czarną Górę, a w nocy można podziwiać gwieździste niebo widoczne przez okno w kopule.
                             Gwarantujemy
                             niezapomniane wrażenia!<br/>
-                            <br/>
-                            <h3>
-                                Gorąco zapraszamy do odwiedzin naszego glampingu gdzie przez cały rok świeci słońce Azji
-                                Środkowej...
-                            </h3>
                         </p>
+                        <h3>
+                            Gorąco zapraszamy do odwiedzin naszego glampingu gdzie przez cały rok świeci słońce Azji
+                            Środkowej...
+                        </h3>
                         <Link to='/reserve' className='button'
                               onClick={() => {
                                   window.scroll({

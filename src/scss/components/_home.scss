@@ -10,13 +10,20 @@
 
     h3 {
       text-align: center;
+      width: 90%;
+      max-width: 1000px;
+
+      @include desktop {
+        width: 50%;
+      }
+
     }
 
     .home_text {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 4rem;
+      margin-bottom: 5rem;
 
       p {
         text-align: justify;
@@ -27,6 +34,10 @@
         @include desktop {
           width: 50%;
         }
+      }
+
+      .button {
+        margin-top: 2.5rem;
       }
     }
   }
