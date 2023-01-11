@@ -5,6 +5,14 @@
     text-align: center;
   }
 
+  h5 {
+    font-size: 1.3rem;
+
+    @include desktop {
+      font-size: 1.5rem;
+    }
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -28,10 +36,10 @@
         opacity: 0.5;
         border: 0;
         border-radius: 0 20px;
+        font-size: 1.1rem;
       }
 
-
-      .checkbox_agree {
+      &:last-of-type {
         display: block;
         position: relative;
         padding-left: 35px;
@@ -42,7 +50,6 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        border: 1px solid red;
 
         input {
           position: absolute;
@@ -89,6 +96,15 @@
           -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+        }
+
+        h5 {
+          margin-bottom: 2rem;
+          font-size: 1.1rem;
+
+          @include desktop {
+            font-size: 1.3rem;
+          }
         }
       }
     }

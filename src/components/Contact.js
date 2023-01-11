@@ -61,19 +61,7 @@ class Contact extends Component {
                             className='checkbox_agree'
                             onChange={this.changeHandler}
                             value={this.state.agree}
-                        >
-                            <span className="checkmark"/>
-                        </MyInput>
-                        {/*    <label className="checkbox_agree">*/
-                        }
-                        {/*        <p.>Wyrażam zgodę na przetwarzanie danych osobowych</p>*/
-                        }
-                        {/*        <input type="checkbox"/>*/
-                        }
-                        {/*        <span className="checkmark"/>*/
-                        }
-                        {/*    </label>*/
-                        }
+                        />
                         <input type="submit" className='button' value="Wyślij"/>
                     </form>
                     {/*{this.state.email === '' ? 'N/A' : this.state.email} <br/>*/}

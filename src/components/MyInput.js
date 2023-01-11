@@ -15,6 +15,7 @@ const MyInput = props => {
                 placeholder={placeholder}
                 onChange={onChange}
             />
+            <span className="checkmark"/>
         </label>
     )
 }
