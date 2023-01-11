@@ -51,7 +51,7 @@ const Prices = () => {
                             <li>Jazdy konne – do umówienia na miejscu lub przez telefon<br/></li>
                             <li>Przejażdżki motocyklowe – do umówienia na miejscu lub przez telefon<br/></li>
                             <br/>
-                            <li>10% rabatu dla osób podróżujących motocyklami.<br/></li>
+                            <li>10% rabatu dla osób podróżujących motocyklami<br/></li>
                         </p>
                     </div>
                     <div className='deposit price'>
