@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
 
-    label {
+    .label {
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -30,13 +30,68 @@
         border-radius: 0 20px;
       }
 
-      div {
-        display: flex;
-        //border: 1px solid red;
-        //justify-content: center;
+
+      .checkbox_agree {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: #eee;
+        }
+
+        &:hover input ~ .checkmark {
+          background-color: #ccc;
+        }
+
+        input:checked ~ .checkmark {
+          background-color: $accent-color;
+        }
+
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .checkmark:after {
+          left: 9px;
+          top: 1px;
+          width: 8px;
+          height: 19px;
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
 
         p {
-          width: 100%;
+          padding-left: 1rem;
         }
       }
     }
