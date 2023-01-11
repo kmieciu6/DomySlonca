@@ -1,15 +1,16 @@
 import React from "react";
-import {Container, Row, Col} from "react-bootstrap";
+import Header from "./header/Header";
+import Footer from "./Footer";
 
 const NotFoundPage = () => {
     return (
-        <Container>
-            <Row>
-                <Col>
-                    <h1>Strona nie istnieje</h1>
-                </Col>
-            </Row>
-        </Container>
+        <>
+            <Header/>
+            <section id='not_found_page' className='pages'>
+                <h1>Strona nie istnieje</h1>
+            </section>
+            <Footer/>
+        </>
     )
 }
 
