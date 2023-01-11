@@ -16,7 +16,7 @@ const Home = () => {
             <section id='home'>
                 <div className='home_info'>
                     <h2>
-                        Odnajdź klimat Azji Środkowej
+                        Poczuj klimat Azji Środkowej
                         w sercu Kotliny Kłodzkiej
                     </h2>
                     <div className='home_text'>
