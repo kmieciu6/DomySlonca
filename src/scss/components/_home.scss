@@ -14,10 +14,13 @@
 
     .home_text {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
 
       p {
         text-align: justify;
+        margin-bottom: 2rem;
         width: 90%;
         max-width: 1000px;
 

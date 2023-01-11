@@ -5,6 +5,7 @@ import Opening from "./Opening";
 import Video from "./Video";
 import Maps from "./Maps";
 import Footer from "./Footer";
+import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
@@ -44,6 +45,16 @@ const Home = () => {
                                 Środkowej...
                             </h3>
                         </p>
+                        <Link to='/reserve' className='button'
+                              onClick={() => {
+                                  window.scroll({
+                                      top: 0,
+                                      left: 0,
+                                      behavior: "smooth",
+                                  });
+                              }}>
+                            Zarezerwuj
+                        </Link>
                     </div>
                     <Video embedId="09_niRBvLPc"/>
                 </div>
