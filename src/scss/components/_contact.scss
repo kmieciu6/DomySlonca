@@ -42,6 +42,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        border: 1px solid red;
 
         input {
           position: absolute;
@@ -88,10 +89,6 @@
           -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-        }
-
-        p {
-          padding-left: 1rem;
         }
       }
     }
