@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const MyTextArea = props => {
-    const {label, type, name, value, className, onChange} = props;
+    const {label, type, name, value, className, onChange, error} = props;
     return (
         <label htmlFor={name} className='label'>
             <h5>{label}</h5>
@@ -16,6 +16,9 @@ const MyTextArea = props => {
                 placeholder='Treść wiadomości'
                 onChange={onChange}
             />
+            {error && (
+                <div className='alert'>{error}</div>
+            )}
         </label>
     )
 }
@@ -26,7 +29,8 @@ MyTextArea.prototype = {
     value: PropTypes.string,
     type: PropTypes.string,
     className: PropTypes.string,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    error: PropTypes.string
 };
 
 export default MyTextArea;

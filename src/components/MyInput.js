@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const MyInput = props => {
-    const {type, label, name, value, className, placeholder, onChange} = props;
+    const {type, label, name, value, className, placeholder, onChange, error} = props;
     return (
         <label htmlFor={name} className='label'>
             <h5>{label}</h5>
@@ -15,6 +15,9 @@ const MyInput = props => {
                 placeholder={placeholder}
                 onChange={onChange}
             />
+            {error && (
+                <div className='alert'>{error}</div>
+            )}
             <span className="checkmark"/>
         </label>
     )
@@ -27,7 +30,8 @@ MyInput.prototype = {
     value: PropTypes.string,
     className: PropTypes.string,
     placeholder: PropTypes.string,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    error: PropTypes.string
 };
 
 export default MyInput;
