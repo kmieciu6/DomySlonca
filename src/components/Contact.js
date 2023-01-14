@@ -27,73 +27,85 @@ class Contact extends Component {
         this.setState(prevState => ({
             ...prevState, [inputName]: inputValue
         }));
-        if (inputName === 'email') {
-            if (inputValue.length < 2) {
-                this.setState(prevState => ({
-                    errors: {
-                        ...prevState.errors,
-                        emailError: 'Email nieprawidłowy'
-                    }
-                }))
-            } else {
-                this.setState(prevState => ({
-                    errors: {
-                        ...prevState.errors,
-                        emailError: ''
-                    }
-                }))
-            }
+    }
+
+    submissionHandler = event => {
+        let errorFound = false;
+        let errEmail = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+
+        if (!this.state.email || errEmail.test(this.state.email) === false) {
+            errorFound = true;
+            this.setState(prevState => ({
+                errors: {
+                    ...prevState.errors,
+                    emailError: 'Email nieprawidłowy'
+                }
+            }));
+        } else {
+            this.setState(prevState => ({
+                errors: {
+                    ...prevState.errors,
+                    emailError: ""
+                }
+            }))
         }
-        if (inputName === 'name') {
-            if (inputValue.length < 2) {
-                this.setState(prevState => ({
-                    errors: {
-                        ...prevState.errors,
-                        nameError: 'Imię i nazwisko powinno mieć co najmniej 2 znaki'
-                    }
-                }))
-            } else {
-                this.setState(prevState => ({
-                    errors: {
-                        ...prevState.errors,
-                        nameError: ''
-                    }
-                }))
-            }
+
+        if (this.state.name.length < 2) {
+            errorFound = true;
+            this.setState(prevState => ({
+                errors: {
+                    ...prevState.errors,
+                    nameError: 'Imię i nazwisko powinno mieć co najmniej 2 znaki'
+                }
+            }));
+        } else {
+            this.setState(prevState => ({
+                errors: {
+                    ...prevState.errors,
+                    nameError: ""
+                }
+            }))
         }
-        if (inputName === 'message') {
-            if (inputValue.length < 50) {
-                this.setState(prevState => ({
-                    errors: {
-                        ...prevState.errors,
-                        messageError: 'Wiadomość powinna mieć co najmniej 50 znaków'
-                    }
-                }))
-            } else {
-                this.setState(prevState => ({
-                    errors: {
-                        ...prevState.errors,
-                        messageError: ''
-                    }
-                }))
-            }
+
+        if (this.state.message.length < 50) {
+            errorFound = true;
+            this.setState(prevState => ({
+                errors: {
+                    ...prevState.errors,
+                    messageError: 'Wiadomość powinna mieć co najmniej 50 znaków'
+                }
+            }));
+        } else {
+            this.setState(prevState => ({
+                errors: {
+                    ...prevState.errors,
+                    messageError: ""
+                }
+            }))
         }
-        if (inputName === 'agree') {
-            if (inputValue === false) {
-                this.setState(prevState => ({
-                    errors: {
-                        ...prevState.errors,
-                        agreeError: 'Wymagana akceptacja'
-                    }
-                }))
-            } else {
-                this.setState(prevState => ({
-                    errors: {
-                        ...prevState.errors,
-                        agreeError: ''
-                    }
-                }))
-            }
+
+        if (this.state.agree === false) {
+            errorFound = true;
+            this.setState(prevState => ({
+                errors: {
+                    ...prevState.errors,
+                    agreeError: 'Wymagana akceptacja'
+                }
+            }));
+        } else {
+            this.setState(prevState => ({
+                errors: {
+                    ...prevState.errors,
+                    agreeError: ''
+                }
+            }))
+        }
+
+        if (errorFound) {
+            event.preventDefault();
+        } else {
+            console.log(this.state);
+            event.preventDefault();
         }
     }
 
@@ -103,7 +115,7 @@ class Contact extends Component {
                 <Header/>
                 <section id='contact' className='pages'>
                     <h1>Kontakt</h1>
-                    <form>
+                    <form onSubmit={this.submissionHandler}>
                         <MyInput
                             type='text'
                             name='email'
@@ -142,11 +154,11 @@ class Contact extends Component {
                             onChange={this.changeHandler}
                             error={this.state.errors.agreeError}
                         />
-                        {/*{this.state.email === '' ? 'N/A' : this.state.email} <br/>*/}
-                        {/*{this.state.name === '' ? 'N/A' : this.state.name} <br/>*/}
-                        {/*{this.state.message === '' ? 'N/A' : this.state.message} <br/>*/}
-                        {/*{this.state.agree ? 'tak' : 'nie'}*/}
-                        <input type="submit" className='button' value="Wyślij"/>
+                        <MyInput
+                            type="submit"
+                            className='button'
+                            value="Wyślij"
+                        />
                     </form>
                 </section>
                 <Footer/>

@@ -17,15 +17,15 @@ const MyTextArea = props => {
                 onChange={onChange}
             />
             {error && (
-                <div className='alert'>{error}</div>
+                <div className='alert'><p>{error}</p></div>
             )}
         </label>
     )
 }
 
 MyTextArea.prototype = {
-    label: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    name: PropTypes.string,
     value: PropTypes.string,
     type: PropTypes.string,
     className: PropTypes.string,

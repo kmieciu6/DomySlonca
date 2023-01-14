@@ -4,6 +4,7 @@ import React from "react";
 const MyInput = props => {
     const {type, label, name, value, className, placeholder, onChange, error} = props;
     return (
+
         <label htmlFor={name} className='label'>
             <h5>{label}</h5>
             <input
@@ -16,7 +17,7 @@ const MyInput = props => {
                 onChange={onChange}
             />
             {error && (
-                <div className='alert'>{error}</div>
+                <div className='alert'><p>{error}</p></div>
             )}
             <span className="checkmark"/>
         </label>
@@ -24,9 +25,9 @@ const MyInput = props => {
 }
 
 MyInput.prototype = {
-    label: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    name: PropTypes.string,
+    type: PropTypes.string,
     value: PropTypes.string,
     className: PropTypes.string,
     placeholder: PropTypes.string,

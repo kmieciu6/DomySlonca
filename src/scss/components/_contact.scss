@@ -39,7 +39,7 @@
         font-size: 1.1rem;
       }
 
-      &:last-of-type {
+      &:nth-of-type(4) {
         display: block;
         position: relative;
         padding-left: 35px;
@@ -106,7 +106,28 @@
             font-size: 1.3rem;
           }
         }
+
+        .alert {
+          margin-left: -2rem;
+        }
       }
+
+      &:last-of-type {
+        border-radius: 30px;
+        height: 3.5rem;
+        width: 10rem;
+      }
+    }
+  }
+
+  .alert {
+    margin-top: -2rem;
+    margin-bottom: -0.5rem;
+
+    p {
+      font-size: 1.1rem;
+      color: $action-color;
+      opacity: 0.9;
     }
   }
 }
