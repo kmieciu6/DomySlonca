@@ -1,5 +1,5 @@
 import React from "react";
-import {HashRouter, Routes, Route} from "react-router-dom";
+import {Routes, Route, BrowserRouter} from "react-router-dom";
 import './scss/main.scss';
 import Home from './components/Home';
 import Yurts from './components/Yurts';
@@ -13,7 +13,7 @@ import NotFoundPage from "./components/NotFoundPage";
 function App() {
     return (
         <>
-            <HashRouter>
+            <BrowserRouter>
                 <Routes>
                     <Route exact path='/' element={<Home/>}/>
                     <Route exact path='/yurts' element={<Yurts/>}/>
@@ -22,9 +22,9 @@ function App() {
                     <Route exact path='/reserve' element={<Reserve/>}/>
                     <Route exact path='/contact' element={<Contact/>}/>
                     <Route exact path='/privacy_policy' element={<PrivacyPolicy/>}/>
-                    <Route exact path='/**' element={<NotFoundPage/>}/>
+                    <Route path='/*' element={<NotFoundPage/>}/>
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </>
     );
 }

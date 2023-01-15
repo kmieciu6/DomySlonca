@@ -1,0 +1,24 @@
+#not_found_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //min-height: 50vh;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .darth {
+    width: 200px;
+    margin-bottom: 1rem;
+
+    @include mobile {
+      width: 100px;
+    }
+  }
+
+  p {
+    margin-bottom: 4rem;
+  }
+}
