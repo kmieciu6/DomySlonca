@@ -5,7 +5,7 @@ import Opening from "./Opening";
 import Video from "./Video";
 import Maps from "./Maps";
 import Footer from "./Footer";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
@@ -44,16 +44,16 @@ const Home = () => {
                             Gorąco zapraszamy do odwiedzin naszego glampingu gdzie przez cały rok świeci słońce Azji
                             Środkowej...
                         </h3>
-                        <Link to='/reserve' className='button'
-                              onClick={() => {
-                                  window.scroll({
-                                      top: 0,
-                                      left: 0,
-                                      behavior: "smooth",
-                                  });
-                              }}>
-                            Zarezerwuj
-                        </Link>
+                        {/*<Link to='/reserve' className='button'*/}
+                        {/*      onClick={() => {*/}
+                        {/*          window.scroll({*/}
+                        {/*              top: 0,*/}
+                        {/*              left: 0,*/}
+                        {/*              behavior: "smooth",*/}
+                        {/*          });*/}
+                        {/*      }}>*/}
+                        {/*    Zarezerwuj*/}
+                        {/*</Link>*/}
                     </div>
                     <Video embedId="09_niRBvLPc"/>
                 </div>

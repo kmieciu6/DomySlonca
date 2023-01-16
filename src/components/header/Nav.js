@@ -20,9 +20,9 @@ const Nav = () => {
                 <Link to='/prices'>
                     <button className='nav_btn'>Cennik</button>
                 </Link>
-                <Link to='/reserve'>
-                    <button className='nav_btn res'>Rezerwuj</button>
-                </Link>
+                {/*<Link to='/reserve'>*/}
+                {/*    <button className='nav_btn res'>Rezerwuj</button>*/}
+                {/*</Link>*/}
                 <Link to='/contact'>
                     <button className='nav_btn'>Kontakt</button>
                 </Link>

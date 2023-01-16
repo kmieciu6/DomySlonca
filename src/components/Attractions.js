@@ -1,4 +1,5 @@
 import React from "react";
+// import {Link} from "react-router-dom";
 import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
@@ -24,7 +25,6 @@ import photo17 from "../assets/kon5.jpeg"
 import photo18 from "../assets/zabawa1.jpeg"
 import photo19 from "../assets/zabawa2.jpeg"
 import photo20 from "../assets/zabawa3.jpeg"
-import {Link} from "react-router-dom";
 
 const Attractions = () => {
 
@@ -140,16 +140,16 @@ const Attractions = () => {
                         rodzinom z dziećmi. Mamy tu plac zabaw i ogród, w którym można bawić się do upadłego. I są też
                         zwierzaki, czekające na głaskanie i psoty.
                     </p>
-                    <Link to='/reserve' className='button'
-                          onClick={() => {
-                              window.scroll({
-                                  top: 0,
-                                  left: 0,
-                                  behavior: "smooth",
-                              });
-                          }}>
-                        Zarezerwuj
-                    </Link>
+                    {/*<Link to='/reserve' className='button'*/}
+                    {/*      onClick={() => {*/}
+                    {/*          window.scroll({*/}
+                    {/*              top: 0,*/}
+                    {/*              left: 0,*/}
+                    {/*              behavior: "smooth",*/}
+                    {/*          });*/}
+                    {/*      }}>*/}
+                    {/*    Zarezerwuj*/}
+                    {/*</Link>*/}
                 </div>
             </section>
             <Footer/>

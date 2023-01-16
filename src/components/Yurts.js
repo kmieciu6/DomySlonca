@@ -3,7 +3,7 @@ import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
 import {Link as Scroll} from 'react-scroll';
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUserGroup, faMaximize, faShower, faBed} from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-bootstrap/Carousel";
@@ -217,16 +217,16 @@ const Yurts = () => {
                                 </Carousel>
                             </div>
                         </div>
-                        <Link to='/reserve' className='button'
-                              onClick={() => {
-                                  window.scroll({
-                                      top: 0,
-                                      left: 0,
-                                      behavior: "smooth",
-                                  });
-                              }}>
-                            Zarezerwuj
-                        </Link>
+                        {/*<Link to='/reserve' className='button'*/}
+                        {/*      onClick={() => {*/}
+                        {/*          window.scroll({*/}
+                        {/*              top: 0,*/}
+                        {/*              left: 0,*/}
+                        {/*              behavior: "smooth",*/}
+                        {/*          });*/}
+                        {/*      }}>*/}
+                        {/*    Zarezerwuj*/}
+                        {/*</Link>*/}
                     </div>
                     <div id='wind' className='yurta'>
                         <h2>Wiatr</h2>
@@ -364,16 +364,16 @@ const Yurts = () => {
                                 autentyczna.
                             </p>
                         </div>
-                        <Link to='/reserve' className='button'
-                              onClick={() => {
-                                  window.scroll({
-                                      top: 0,
-                                      left: 0,
-                                      behavior: "smooth",
-                                  });
-                              }}>
-                            Zarezerwuj
-                        </Link>
+                        {/*<Link to='/reserve' className='button'*/}
+                        {/*      onClick={() => {*/}
+                        {/*          window.scroll({*/}
+                        {/*              top: 0,*/}
+                        {/*              left: 0,*/}
+                        {/*              behavior: "smooth",*/}
+                        {/*          });*/}
+                        {/*      }}>*/}
+                        {/*    Zarezerwuj*/}
+                        {/*</Link>*/}
                     </div>
                     <div id='fire' className='yurta'>
                         <h2>Ogień</h2>
@@ -464,16 +464,16 @@ const Yurts = () => {
                                 </Carousel>
                             </div>
                         </div>
-                        <Link to='/reserve' className='button'
-                              onClick={() => {
-                                  window.scroll({
-                                      top: 0,
-                                      left: 0,
-                                      behavior: "smooth",
-                                  });
-                              }}>
-                            Zarezerwuj
-                        </Link>
+                        {/*<Link to='/reserve' className='button'*/}
+                        {/*      onClick={() => {*/}
+                        {/*          window.scroll({*/}
+                        {/*              top: 0,*/}
+                        {/*              left: 0,*/}
+                        {/*              behavior: "smooth",*/}
+                        {/*          });*/}
+                        {/*      }}>*/}
+                        {/*    Zarezerwuj*/}
+                        {/*</Link>*/}
                     </div>
                     <div id='etno' className='yurta'>
                         <h2>Etno</h2>
