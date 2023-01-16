@@ -39,7 +39,7 @@
         font-size: 1.1rem;
       }
 
-      &:nth-of-type(4) {
+      &:nth-of-type(5) {
         display: block;
         position: relative;
         padding-left: 35px;
@@ -106,28 +106,36 @@
             font-size: 1.3rem;
           }
         }
-
-        .alert {
-          margin-left: -2rem;
-        }
-      }
-
-      &:last-of-type {
-        border-radius: 30px;
-        height: 3.5rem;
-        width: 10rem;
       }
     }
   }
 
   .alert {
     margin-top: -2rem;
-    margin-bottom: -0.5rem;
+  }
 
-    p {
-      font-size: 1.1rem;
-      color: $action-color;
-      opacity: 0.9;
+  p {
+    font-size: 1.1rem;
+    color: $action-color;
+    opacity: 0.9;
+  }
+
+  .alert_agree {
+    margin-left: -2rem;
+  }
+
+  .thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 90%;
+      margin-bottom: 2rem;
+
+      @include desktop {
+        width: 50%;
+      }
     }
   }
 }
