@@ -104,7 +104,7 @@ function Contact() {
                                         type='number'
                                         name='number'
                                         className='input'
-                                        placeholder='Numer telefonu'
+                                        placeholder='+48 123456789'
                                     />
                                 </label>
 
@@ -131,7 +131,8 @@ function Contact() {
                                     />
                                     <h5>Wyrażam zgodę na przetwarzanie danych osobowych.</h5>
                                     <span className="checkmark"/>
-                                    <ErrorMessage name="agree" render={msg => <p className="alert alert_agree">{msg}</p>}/>
+                                    <ErrorMessage name="agree"
+                                                  render={msg => <p className="alert alert_agree">{msg}</p>}/>
                                 </label>
 
                                 <button
