@@ -138,4 +138,13 @@
       }
     }
   }
+
+  .link {
+    border-bottom: 1px solid black;
+    transition: 1s;
+
+    &:hover {
+      border-bottom: 1px solid $accent-color;
+    }
+  }
 }

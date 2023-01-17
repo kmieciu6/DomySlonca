@@ -129,7 +129,21 @@ function Contact() {
                                         name='agree'
                                         className='checkbox_agree'
                                     />
-                                    <h5>Wyrażam zgodę na przetwarzanie danych osobowych.</h5>
+                                    <h5>
+                                        Wyrażam zgodę na przetwarzanie danych osobowych oraz akceptuję
+                                        <Link
+                                            to='/privacy_policy'
+                                            className='link'
+                                            onClick={() => {
+                                                window.scroll({
+                                                    top: 0,
+                                                    left: 0,
+                                                    behavior: "smooth",
+                                                });
+                                            }}> regulamin i politykę prywatności
+                                        </Link>
+                                        .
+                                    </h5>
                                     <span className="checkmark"/>
                                     <ErrorMessage name="agree"
                                                   render={msg => <p className="alert alert_agree">{msg}</p>}/>
