@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendarDays, faArrowRightLong} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
+import bon from '../assets/bon.jpeg'
 
 const Prices = () => {
     return (
@@ -51,6 +52,7 @@ const Prices = () => {
                     <span/>
                     <p className='bon'>
                         Akceptujemy bony turystyczne<br/>
+                        <img src={bon} alt="Bon turystyczny"/>
                     </p>
                     <div className='information price'>
                         <h3>Informacje</h3>
@@ -65,7 +67,7 @@ const Prices = () => {
                             <li>Balia płatna – 150 zł</li>
                             <li>Sauna płatna – 150 zł<br/></li>
                             <li>Jazdy konne – do umówienia na miejscu lub przez telefon<br/></li>
-                            <li>Przejażdżki motocyklowe – do umówienia na miejscu lub przez telefon<br/></li>
+                            <li>Przejażdżki na naszych motocyklach – do umówienia na miejscu lub przez telefon<br/></li>
                             <br/>
                             <li>10% rabatu dla osób podróżujących motocyklami<br/></li>
                         </p>
