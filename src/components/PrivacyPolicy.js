@@ -197,74 +197,76 @@ const PrivacyPolicy = () => {
                         numer telefonu, treści tworzone przez użytkownika, kategorie treści, posty, inne treści
                         powszechnie
                         dostępne w Internecie, inne dobrowolnie przekazane nam dane osobowe.<br/>
-                        {/*<br/>*/}
-                        {/*Polityka Cookies<br/>*/}
-                        {/*Cookies (ciasteczka) to niewielka informacja zapisywana przez serwer na urządzeniu końcowym*/}
-                        {/*użytkownika*/}
-                        {/*(komputerze, tablecie, smartfonie) w pliku cookie.txt, którą nasz serwer może odczytać przy*/}
-                        {/*ponownym*/}
-                        {/*połączeniu się z tego komputera. Pliki cookie nie zawierają danych pozwalających na Twoją*/}
-                        {/*identyfikację*/}
-                        {/*, nie są udostępniane osobom trzecim, a ich odczytanie jest możliwe wyłączenie przez serwer,*/}
-                        {/*który*/}
-                        {/*je*/}
-                        {/*utworzył.<br/>*/}
-                        {/*<br/>*/}
-                        {/*Rodzaje wykorzystywanych cookies<br/>*/}
-                        {/*• Cookies sesyjne: są przechowywane na Urządzeniu Użytkownika i pozostają tam do momentu*/}
-                        {/*zakończenia*/}
-                        {/*sesji danej przeglądarki. Zapisane informacje są wówczas trwale usuwane z pamięci*/}
-                        {/*Urządzenia.*/}
-                        {/*Mechanizm*/}
-                        {/*cookies sesyjnych nie pozwala na pobieranie jakichkolwiek danych osobowych ani żadnych*/}
-                        {/*informacji*/}
-                        {/*poufnych z Urządzenia Użytkownika.<br/>*/}
-                        {/*• Cookies trwałe: są przechowywane na Urządzeniu Użytkownika i pozostają tam do momentu ich*/}
-                        {/*skasowania.*/}
-                        {/*Zakończenie sesji danej przeglądarki lub wyłączenie Urządzenia nie powoduje ich usunięcia z*/}
-                        {/*Urządzenia*/}
-                        {/*Użytkownika. Mechanizm cookies trwałych nie pozwala na pobieranie jakichkolwiek danych*/}
-                        {/*osobowych*/}
-                        {/*ani*/}
-                        {/*żadnych informacji poufnych z Urządzenia Użytkownika.<br/>*/}
-                        {/*<br/>*/}
-                        {/*Cele w jakich wykorzystywane są Cookies<br/>*/}
-                        {/*• Dostosowania zawartości stron internetowych Serwisu do preferencji Użytkownika oraz*/}
-                        {/*optymalizacji*/}
-                        {/*korzystania ze stron internetowych Serwisu.<br/>*/}
-                        {/*• Rozpoznania urządzenia Użytkownika Serwisu i odpowiednio wyświetlenia strony internetowej,*/}
-                        {/*dostosowanej do jego indywidualnych potrzeb.<br/>*/}
-                        {/*<br/>*/}
-                        {/*Możliwości określenia warunków przechowywania lub uzyskiwania dostępu przez cookies<br/>*/}
-                        {/*Użytkownik może samodzielnie i w każdym czasie zmienić ustawienia dotyczące plików Cookies,*/}
-                        {/*określając*/}
-                        {/*warunki ich przechowywania i uzyskiwania dostępu przez pliki Cookies do Urządzenia*/}
-                        {/*Użytkownika.*/}
-                        {/*Zmiany*/}
-                        {/*ustawień, o których mowa w zdaniu poprzednim, Użytkownik może dokonać za pomocą ustawień*/}
-                        {/*przeglądarki*/}
-                        {/*internetowej lub za pomocą konfiguracji usługi. Ustawienia te mogą zostać zmienione w*/}
-                        {/*szczególności*/}
-                        {/*w*/}
-                        {/*taki sposób, aby blokować automatyczną obsługę plików cookies w ustawieniach przeglądarki*/}
-                        {/*internetowej*/}
-                        {/*bądź informować o ich każdorazowym zamieszczeniu Cookies na urządzeniu Użytkownika.*/}
-                        {/*Szczegółowe*/}
-                        {/*informacje o możliwości i sposobach obsługi plików cookies dostępne są w ustawieniach*/}
-                        {/*oprogramowania*/}
-                        {/*(przeglądarki internetowej).<br/>*/}
-                        {/*Poniżej przedstawiamy jak można zmienić ustawienia przeglądarek internetowych w zakresie*/}
-                        {/*stosowania*/}
-                        {/*plików cookies:<br/>*/}
-                        {/*• Przeglądarka I n t e r n e t E x p l o r e r<br/>*/}
-                        {/*• Przeglądarka M o z i l l a F i r e F o x<br/>*/}
-                        {/*• Przeglądarka C h r o m e<br/>*/}
-                        {/*• Przeglądarka S a f a r i<br/>*/}
-                        {/*• Przeglądarka O p e r a<br/>*/}
-                        {/*Użytkownik może w każdej chwili usunąć pliki Cookies korzystając z dostępnych funkcji w*/}
-                        {/*przeglądarce*/}
-                        {/*internetowej, której używa. Ograniczenie stosowania plików Cookies, może wpłynąć na niektóre*/}
-                        {/*funkcjonalności dostępne na stronie internetowej Serwisu.*/}
+                        <br/>
+                        Polityka Cookies<br/>
+                        Cookies (ciasteczka) to niewielka informacja zapisywana przez serwer na urządzeniu końcowym
+                        użytkownika
+                        (komputerze, tablecie, smartfonie) w pliku cookie.txt, którą nasz serwer może odczytać przy
+                        ponownym
+                        połączeniu się z tego komputera. Pliki cookie nie zawierają danych pozwalających na Twoją
+                        identyfikację
+                        , nie są udostępniane osobom trzecim, a ich odczytanie jest możliwe wyłączenie przez serwer,
+                        który
+                        je
+                        utworzył.<br/>
+                        <br/>
+                        Rodzaje wykorzystywanych cookies<br/>
+                        • Cookies sesyjne: są przechowywane na Urządzeniu Użytkownika i pozostają tam do momentu
+                        zakończenia
+                        sesji danej przeglądarki. Zapisane informacje są wówczas trwale usuwane z pamięci
+                        Urządzenia.
+                        Mechanizm
+                        cookies sesyjnych nie pozwala na pobieranie jakichkolwiek danych osobowych ani żadnych
+                        informacji
+                        poufnych z Urządzenia Użytkownika.<br/>
+                        • Cookies trwałe: są przechowywane na Urządzeniu Użytkownika i pozostają tam do momentu ich
+                        skasowania.
+                        Zakończenie sesji danej przeglądarki lub wyłączenie Urządzenia nie powoduje ich usunięcia z
+                        Urządzenia
+                        Użytkownika. Mechanizm cookies trwałych nie pozwala na pobieranie jakichkolwiek danych
+                        osobowych
+                        ani
+                        żadnych informacji poufnych z Urządzenia Użytkownika.<br/>
+                        <br/>
+                        Cele w jakich wykorzystywane są Cookies<br/>
+                        • Dostosowania zawartości stron internetowych Serwisu do preferencji Użytkownika oraz
+                        optymalizacji
+                        korzystania ze stron internetowych Serwisu.<br/>
+                        • Rozpoznania urządzenia Użytkownika Serwisu i odpowiednio wyświetlenia strony internetowej,
+                        dostosowanej do jego indywidualnych potrzeb.<br/>
+                        <br/>
+                        Możliwości określenia warunków przechowywania lub uzyskiwania dostępu przez cookies<br/>
+                        Użytkownik może samodzielnie i w każdym czasie zmienić ustawienia dotyczące plików Cookies,
+                        określając
+                        warunki ich przechowywania i uzyskiwania dostępu przez pliki Cookies do Urządzenia
+                        Użytkownika.
+                        Zmiany
+                        ustawień, o których mowa w zdaniu poprzednim, Użytkownik może dokonać za pomocą ustawień
+                        przeglądarki
+                        internetowej lub za pomocą konfiguracji usługi. Ustawienia te mogą zostać zmienione w
+                        szczególności
+                        w
+                        taki sposób, aby blokować automatyczną obsługę plików cookies w ustawieniach przeglądarki
+                        internetowej
+                        bądź informować o ich każdorazowym zamieszczeniu Cookies na urządzeniu Użytkownika.
+                        Szczegółowe
+                        informacje o możliwości i sposobach obsługi plików cookies dostępne są w ustawieniach
+                        oprogramowania
+                        (przeglądarki internetowej).<br/>
+                        Poniżej przedstawiamy jak można zmienić ustawienia przeglądarek internetowych w zakresie
+                        stosowania
+                        plików cookies:<br/>
+                        • Przeglądarka <a href="http://www.support.microsoft.com/kb/278835/pl">Internet
+                            Explorer</a><br/>
+                        • Przeglądarka <a href="https://support.mozilla.org/pl/kb/ciasteczka">Mozilla Firefox</a><br/>
+                        • Przeglądarka <a href="https://support.google.com/chrome/answer/95647?hl=pl">Google
+                            Chrome</a><br/>
+                        • Przeglądarka <a href="https://support.apple.com/pl-pl/HT201265">Safari</a><br/>
+                        • Przeglądarka <a href="https://help.opera.com/pl/latest/web-preferences/">Opera</a><br/>
+                        Użytkownik może w każdej chwili usunąć pliki Cookies korzystając z dostępnych funkcji w
+                        przeglądarce
+                        internetowej, której używa. Ograniczenie stosowania plików Cookies, może wpłynąć na niektóre
+                        funkcjonalności dostępne na stronie internetowej Serwisu.
                     </p>
                 </div>
             </section>
