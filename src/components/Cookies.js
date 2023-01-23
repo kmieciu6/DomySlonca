@@ -8,16 +8,17 @@ const Cookies = () => {
                 location="bottom"
                 buttonText="Rozumiem i akceptuje"
                 cookieName="myAwesomeCookieName2"
-                style={{background: "#2B373B", opacity: .8}}
-                buttonStyle={{color: "#4e503b", fontSize: "15px"}}
+                style={{background: "#2B373B", opacity: .5}}
+                buttonStyle={{color: "#4e503b", fontSize: "16px"}}
                 expires={150}
             >
                 Strona korzysta z plików cookie w celu poprawienia jej dostępności, personalizacji czy aby zbierać dane,
                 dotyczące ruchu na stronie. Każdy może sam decydować o tym czy dopuszcza pliki cookies, ustawiając
                 odpowiednio swoją przeglądarkę.
-
+                <br/>
                 Więcej informacji znajdziesz w
                 <Link to="/privacy_policy"
+                      className='terms_cookies'
                       onClick={() => {
                           window.scroll({
                               top: 0,
