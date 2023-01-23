@@ -8,8 +8,8 @@ const Cookies = () => {
                 location="bottom"
                 buttonText="Rozumiem i akceptuje"
                 cookieName="myAwesomeCookieName2"
-                style={{background: "#2B373B", opacity: .8}}
-                buttonStyle={{background: "$accent-color", color: "black", fontSize: "17px", padding: '0.8rem'}}
+                style={{background: "#2B373B", opacity: .9}}
+                buttonStyle={{background: "orange", color: "black", fontSize: "17px", padding: '0.6rem 1rem'}}
                 expires={150}
             >
                 Strona korzysta z plików cookie w celu poprawienia jej dostępności, personalizacji czy aby zbierać dane,
