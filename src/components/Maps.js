@@ -21,7 +21,7 @@ function Map() {
 
 
     return <GoogleMap
-        zoom={15}
+        zoom={13}
         center={center}
         mapContainerClassName='map'
     >
