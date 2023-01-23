@@ -3,7 +3,6 @@ import PreLoader from "./PreLoader";
 import Header from './header/Header';
 import Opening from "./Opening";
 import Video from "./Video";
-import Maps from "./Maps";
 import Footer from "./Footer";
 // import {Link} from "react-router-dom";
 
@@ -58,7 +57,6 @@ const Home = () => {
                     <Video embedId="09_niRBvLPc"/>
                 </div>
             </section>
-            <Maps/>
             <Footer/>
         </>
     )

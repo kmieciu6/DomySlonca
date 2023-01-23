@@ -6,6 +6,7 @@ import instagram_logo from "../assets/logo_instagram.png";
 import icon_phone from '../assets/phone.svg';
 import icon_mail from '../assets/mail.svg';
 import practices from '../assets/dobre_praktyki.png'
+import Maps from './Maps';
 
 const Footer = () => {
     return (
@@ -29,6 +30,9 @@ const Footer = () => {
                         57-300 Kłodzko
                     </p>
                 </a>
+            </div>
+            <div className='maps'>
+                <Maps/>
             </div>
             <div className='privacy'>
                 <Link

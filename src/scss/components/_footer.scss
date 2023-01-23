@@ -65,6 +65,7 @@
   .privacy {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
   }
 
   .links {
@@ -107,6 +108,23 @@
 
     a {
       width: 15rem;
+    }
+  }
+}
+
+.maps {
+  @include desktop {
+    display: flex;
+    align-self: center;
+  }
+
+  .map {
+    width: 100%;
+    height: 60vh;
+
+    @include desktop {
+      padding: 0 30rem;
+      height: 40vh;
     }
   }
 }
