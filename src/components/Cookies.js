@@ -9,7 +9,7 @@ const Cookies = () => {
                 buttonText="Rozumiem i akceptuje"
                 cookieName="myAwesomeCookieName2"
                 style={{background: "#2B373B", opacity: .8}}
-                buttonStyle={{color: "#4e503b", fontSize: "17px", padding: '1rem 0'}}
+                buttonStyle={{background: "$accent-color", color: "black", fontSize: "17px", padding: '0.8rem'}}
                 expires={150}
             >
                 Strona korzysta z plików cookie w celu poprawienia jej dostępności, personalizacji czy aby zbierać dane,
