@@ -1,14 +1,25 @@
 .video {
-  margin: 2rem 0;
+  margin-top: -3rem;
+  margin-bottom: -1rem;
   display: flex;
   justify-content: center;
-  min-height: 20vh;
+  min-height: 30vh;
 
   @include tablet {
-    min-height: 40vh;
+    min-height: 50vh;
+    margin-top: -2rem;
   }
 
   @include desktop {
     min-height: 60vh;
+    margin: 2rem 0;
+  }
+
+  .video_screen {
+    width: 90%;
+
+    @include desktop {
+      width: 50%;
+    }
   }
 }
