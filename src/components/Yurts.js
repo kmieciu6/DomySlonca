@@ -135,15 +135,8 @@ const Yurts = () => {
                                 W połączeniu z elementami jurty malowanymi przez Buriatów powstała piękna
                                 całość.<br/>
                                 <br/>
-                                W założeniu jurta miała być ogrzewana tradycyjnie przy pomocy tzw. kozy burżujki
-                                opalanej
-                                drewnem. Jednak wizyta kominiarza i strażaka przekonały nas do zastosowania
-                                ogrzewania
-                                zgodnego z trendami i miejscem tj. elektrycznego. Jurtę wyposażyliśmy w
-                                system ogrzewania elektrycznego pozwalający na komfortowe zamieszkiwanie w niej
-                                przez
-                                cały
-                                rok.<br/>
+                                Jurtę wyposażyliśmy w system ogrzewania elektrycznego pozwalający
+                                na komfortowe zamieszkiwanie w niej przez cały rok.<br/>
                                 Szklana kopuła (TONO) zwieńczająca jurtę dopełnia efektu przebywania w świecie
                                 stepów
                                 Azji
