@@ -31,8 +31,9 @@ import fire_photo1 from "../assets/ogien1.jpeg";
 import fire_photo2 from "../assets/w_ogien1.jpeg";
 import fire_photo3 from "../assets/w_ogien2.jpeg";
 import fire_photo4 from "../assets/w_ogien3.jpeg";
-import fire_photo5 from "../assets/w_ogien4.jpeg";
-import fire_photo6 from "../assets/w_ogien5.jpeg";
+import fire_photo5 from "../assets/ogien2.jpeg";
+import fire_photo6 from "../assets/w_ogien4.jpeg";
+import fire_photo7 from "../assets/w_ogien5.jpeg";
 
 import etno_photo1 from "../assets/etno1.jpeg";
 import etno_photo2 from "../assets/w_etno1.jpeg";
@@ -450,6 +451,15 @@ const Yurts = () => {
                                             className="d-block w-100"
                                             src={fire_photo6}
                                             alt="Sixth slide"
+                                        />
+                                        <Carousel.Caption>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={fire_photo7}
+                                            alt="Seventh slide"
                                         />
                                         <Carousel.Caption>
                                         </Carousel.Caption>
