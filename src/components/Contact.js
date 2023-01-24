@@ -104,7 +104,7 @@ function Contact() {
                                         type='number'
                                         name='number'
                                         className='input'
-                                        placeholder='+48 123456789'
+                                        placeholder='+48 123 456 789'
                                     />
                                 </label>
 
