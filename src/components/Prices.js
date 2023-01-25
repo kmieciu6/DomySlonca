@@ -20,7 +20,7 @@ const Prices = () => {
                             czerwiec <FontAwesomeIcon icon={faArrowRightLong}/> wrzesień<br/>
                             grudzień <FontAwesomeIcon icon={faArrowRightLong}/> luty<br/>
                         </p>
-                        <Link to='/contact' onClick={() => {
+                        <Link to='/reserve' onClick={() => {
                             window.scroll({
                                 top: 0,
                                 left: 0,
@@ -38,7 +38,7 @@ const Prices = () => {
                             październik <FontAwesomeIcon icon={faArrowRightLong}/> listopad<br/>
                             marzec <FontAwesomeIcon icon={faArrowRightLong}/> maj<br/>
                         </p>
-                        <Link to='/contact' onClick={() => {
+                        <Link to='/reserve' onClick={() => {
                             window.scroll({
                                 top: 0,
                                 left: 0,

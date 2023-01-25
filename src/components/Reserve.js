@@ -11,9 +11,7 @@ const Reserve = () => {
                     Zarezerwuj swój pobyt
                 </h1>
                 <div>
-                    <p>
-                        Silnik rezerwacyjny!!!
-                    </p>
+                    <div data-hs-embed="pokoje">&nbsp;</div>
                 </div>
             </section>
             <Footer/>
