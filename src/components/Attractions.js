@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
 import ImageGallery from 'react-image-gallery';
@@ -113,7 +112,6 @@ const Attractions = () => {
 
     return (
         <>
-            <PreLoader/>
             <Header/>
             <section id='attractions' className='pages'>
                 <h1>Czas wolny</h1>

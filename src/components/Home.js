@@ -1,5 +1,4 @@
 import React from "react";
-import PreLoader from "./PreLoader";
 import Header from './header/Header';
 import Opening from "./Opening";
 import Video from "./Video";
@@ -9,7 +8,6 @@ import {Link} from "react-router-dom";
 const Home = () => {
     return (
         <>
-            <PreLoader/>
             <Header/>
             <Opening/>
             <section id='home'>

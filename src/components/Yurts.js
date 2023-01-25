@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import PreLoader from "./PreLoader";
 import Header from "./header/Header";
 import Footer from "./Footer";
 import {Link as Scroll} from 'react-scroll';
@@ -69,7 +68,6 @@ const Yurts = () => {
 
     return (
         <>
-            <PreLoader/>
             <Header/>
             <section id='yurts' className='pages'>
                 <h1>Nasze jurty</h1>
