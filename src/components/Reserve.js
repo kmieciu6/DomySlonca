@@ -10,9 +10,7 @@ const Reserve = () => {
                 <h1>
                     Zarezerwuj swój pobyt
                 </h1>
-                <div>
-                    <div data-hs-embed="pokoje">&nbsp;</div>
-                </div>
+                <div data-hs-embed="pokoje">&nbsp;</div>
             </section>
             <Footer/>
         </>
