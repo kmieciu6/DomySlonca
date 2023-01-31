@@ -34,6 +34,7 @@ const StyledMenu = styled.nav`
           color: orange;
         }
       }
+
       .res {
         color: red;
       }
@@ -48,7 +49,7 @@ const StyledBurger = styled.button`
   @media (max-width: 1023px) {
     border: none;
     background: white;
-    
+
     span {
       display: block;
       width: 20px;
@@ -80,6 +81,9 @@ const Burger = ({open, setOpen}) => {
     const closeSideBar = () => {
         setOpen(false)
     }
+    const openInNewTab = (url) => {
+        window.open(url, '_blank', 'noreferrer');
+    };
     return (
         <>
             <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -93,7 +97,12 @@ const Burger = ({open, setOpen}) => {
                     <Link to="/yurts">Nasze jurty</Link>
                     <Link to='/attractions'>Atrakcje</Link>
                     <Link to='/prices'>Cennik</Link>
-                    <Link to='/reserve' className='res'>Rezerwuj</Link>
+                    <Link className='res'
+                          role="link"
+                          onClick={() => openInNewTab('http://domyslonca.hotelsystems.pl/booking')}
+                    >
+                        Rezerwuj
+                    </Link>
                     <Link to='/contact'>Kontakt</Link>
                 </nav>
             </StyledMenu>

@@ -4,6 +4,9 @@ import {Link} from "react-router-dom";
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
+    const openInNewTab = (url) => {
+        window.open(url, '_blank', 'noreferrer');
+    };
     return (
         <nav className='header__nav'>
             <Burger open={open} setOpen={setOpen}/>
@@ -20,8 +23,13 @@ const Nav = () => {
                 <Link to='/prices'>
                     <button className='nav_btn'>Cennik</button>
                 </Link>
-                <Link to='/reserve'>
-                    <button className='nav_btn res'>Rezerwuj</button>
+                <Link>
+                    <button className='nav_btn res'
+                            role="link"
+                            onClick={() => openInNewTab('http://domyslonca.hotelsystems.pl/booking')}
+                    >
+                        Rezerwuj
+                    </button>
                 </Link>
                 <Link to='/contact'>
                     <button className='nav_btn'>Kontakt</button>
