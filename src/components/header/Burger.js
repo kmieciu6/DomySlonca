@@ -81,9 +81,6 @@ const Burger = ({open, setOpen}) => {
     const closeSideBar = () => {
         setOpen(false)
     }
-    const openInNewTab = (url) => {
-        window.open(url, '_blank', 'noreferrer');
-    };
     return (
         <>
             <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -98,9 +95,9 @@ const Burger = ({open, setOpen}) => {
                     <Link to='/attractions'>Atrakcje</Link>
                     <Link to='/prices'>Cennik</Link>
                     <Link className='res'
-                          role="link"
-                          onClick={() => openInNewTab('http://domyslonca.hotelsystems.pl/booking')}
-                    >
+                          onClick={() => {
+                              window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
+                          }}>
                         Rezerwuj
                     </Link>
                     <Link to='/contact'>Kontakt</Link>

@@ -209,13 +209,9 @@ const Yurts = () => {
                                 </Carousel>
                             </div>
                         </div>
-                        <Link to='/reserve' className='button'
+                        <Link className='button'
                               onClick={() => {
-                                  window.scroll({
-                                      top: 0,
-                                      left: 0,
-                                      behavior: "smooth",
-                                  });
+                                  window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
                               }}>
                             Zarezerwuj
                         </Link>
@@ -356,13 +352,9 @@ const Yurts = () => {
                                 autentyczna.
                             </p>
                         </div>
-                        <Link to='/reserve' className='button'
+                        <Link className='button'
                               onClick={() => {
-                                  window.scroll({
-                                      top: 0,
-                                      left: 0,
-                                      behavior: "smooth",
-                                  });
+                                  window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
                               }}>
                             Zarezerwuj
                         </Link>
@@ -465,13 +457,9 @@ const Yurts = () => {
                                 </Carousel>
                             </div>
                         </div>
-                        <Link to='/reserve' className='button'
+                        <Link className='button'
                               onClick={() => {
-                                  window.scroll({
-                                      top: 0,
-                                      left: 0,
-                                      behavior: "smooth",
-                                  });
+                                  window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
                               }}>
                             Zarezerwuj
                         </Link>

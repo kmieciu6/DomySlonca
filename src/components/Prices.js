@@ -20,13 +20,10 @@ const Prices = () => {
                             czerwiec <FontAwesomeIcon icon={faArrowRightLong}/> wrzesień<br/>
                             grudzień <FontAwesomeIcon icon={faArrowRightLong}/> luty<br/>
                         </p>
-                        <Link to='/reserve' onClick={() => {
-                            window.scroll({
-                                top: 0,
-                                left: 0,
-                                behavior: "smooth",
-                            });
-                        }}>
+                        <Link
+                              onClick={() => {
+                                  window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
+                              }}>
                             <FontAwesomeIcon icon={faCalendarDays} className='calendar first'/>
                         </Link>
                         <h4>500 zł/doba</h4>
@@ -38,13 +35,10 @@ const Prices = () => {
                             październik <FontAwesomeIcon icon={faArrowRightLong}/> listopad<br/>
                             marzec <FontAwesomeIcon icon={faArrowRightLong}/> maj<br/>
                         </p>
-                        <Link to='/reserve' onClick={() => {
-                            window.scroll({
-                                top: 0,
-                                left: 0,
-                                behavior: "smooth",
-                            });
-                        }}>
+                        <Link
+                            onClick={() => {
+                                window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
+                            }}>
                             <FontAwesomeIcon icon={faCalendarDays} className='calendar second'/>
                         </Link>
                         <h4>450 zł/doba</h4>

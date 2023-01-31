@@ -41,13 +41,9 @@ const Home = () => {
                             Gorąco zapraszamy do odwiedzin naszego glampingu gdzie przez cały rok świeci słońce Azji
                             Środkowej...
                         </h3>
-                        <Link to='/reserve' className='button'
+                        <Link className='button'
                               onClick={() => {
-                                  window.scroll({
-                                      top: 0,
-                                      left: 0,
-                                      behavior: "smooth",
-                                  });
+                                  window.open('http://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
                               }}>
                             Zarezerwuj
                         </Link>
