@@ -58,7 +58,7 @@ const Footer = () => {
                 </a>
             </div>
             <div className='copyright'>
-                <p>Copyright 2023</p>
+                <p>Copyright © 2023 <a href="https://domyslonca.pl">domyslonca.pl</a></p>
                 <a href="https://github.com/kmieciu6?tab=repositories">
                     <p>
                         Made by <b>Jakub Kmiecik</b>
