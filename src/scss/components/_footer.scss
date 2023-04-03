@@ -89,9 +89,11 @@
 
   }
 
-  .good_practices {
+  .good_practices,
+  .seniors {
     width: 150px;
     height: 150px;
+    margin: 0 2rem;
     margin-bottom: 1rem;
 
     @include mobile {

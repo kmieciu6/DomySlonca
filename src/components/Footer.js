@@ -6,6 +6,7 @@ import instagram_logo from "../assets/logo_instagram.png";
 import icon_phone from '../assets/phone.svg';
 import icon_mail from '../assets/mail.svg';
 import practices from '../assets/dobre_praktyki.png'
+import senior from '../assets/senior.png'
 import Maps from './Maps';
 
 const Footer = () => {
@@ -22,7 +23,10 @@ const Footer = () => {
                 </a>
             </div>
             <div className='adres'>
-                <img className='good_practices' src={practices} alt="dobre praktyki"/>
+                <div className='practices_seniors'>
+                    <img className='good_practices' src={practices} alt="dobre praktyki"/>
+                    <img className='seniors' src={senior} alt="senior"/>
+                </div> 
                 <a href="https://www.google.com/maps/place/Domy+słońca/@50.41759,16.664003,17z/data=!3m1!4b1!4m8!3m7!1s0x470e17874133a405:0xaec2fb5f8ca68b0b!5m2!4m1!1i2!8m2!3d50.41759!4d16.6661917">
                     <p>
                         Jaszkowa Dolna 18<br/>
