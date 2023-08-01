@@ -97,12 +97,26 @@
       text-align: center;
       flex-wrap: wrap;
       justify-content: center;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
 
       li {
         list-style-type: none;
         margin: 0 1.5rem;
 
+        .icon {
+
+          @include desktop {
+            height: 30px;
+          }
+        }
+
+        .dog {
+          height: 23px;
+
+          @include desktop {
+            height: 35px;
+          }
+        }
       }
     }
 
@@ -174,14 +188,14 @@
     }
 
     h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       font-size: 2.2rem;
       text-align: center;
 
       @include desktop {
         font-size: 2.8rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
       }
     }
   }

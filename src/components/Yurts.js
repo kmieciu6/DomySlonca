@@ -4,8 +4,10 @@ import Footer from "./Footer";
 import {Link as Scroll} from 'react-scroll';
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faUserGroup, faMaximize, faShower, faBed} from "@fortawesome/free-solid-svg-icons";
+import {faUserGroup, faMaximize, faShower, faBed, faWifi} from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-bootstrap/Carousel";
+
+import no_dogs from '../assets/no-dogs.svg';
 
 import sun_photo1 from "../assets/slonce1.jpeg";
 import sun_photo2 from "../assets/w_slonce1.jpeg";
@@ -102,24 +104,32 @@ const Yurts = () => {
                         <h2>Słońce</h2>
                         <div className='info_logo'>
                             <li>
-                                <FontAwesomeIcon icon={faUserGroup}/>
+                                <FontAwesomeIcon className="icon" icon={faUserGroup} />
                                 <p>do 5 osób</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faMaximize}/>
+                                <FontAwesomeIcon className="icon" icon={faMaximize}/>
                                 <p>35 m2</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faBed}/>
+                                <FontAwesomeIcon className="icon" icon={faBed}/>
                                 <p>podwójne łóżko: 1</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faBed}/>
+                                <FontAwesomeIcon className="icon" icon={faBed}/>
                                 <p>pojedyncze łóżko: 3</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faShower}/>
+                                <FontAwesomeIcon className="icon" icon={faShower}/>
                                 <p>łazienka</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon className="icon" icon={faWifi} />
+                                <p>wi-fi</p>
+                            </li>
+                            <li>
+                                <img className="icon dog" src={no_dogs} alt='dog'/>
+                                <p>zakaz zwierząt</p>
                             </li>
                         </div>
                         <div className='info_photo c1'>
@@ -220,24 +230,32 @@ const Yurts = () => {
                         <h2>Wiatr</h2>
                         <div className='info_logo'>
                             <li>
-                                <FontAwesomeIcon icon={faUserGroup}/>
+                                <FontAwesomeIcon className="icon" icon={faUserGroup}/>
                                 <p>do 7 osób</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faMaximize}/>
+                                <FontAwesomeIcon className="icon" icon={faMaximize}/>
                                 <p>35 m2</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faBed}/>
+                                <FontAwesomeIcon className="icon" icon={faBed}/>
                                 <p>podwójne łóżko: 2</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faBed}/>
+                                <FontAwesomeIcon className="icon" icon={faBed}/>
                                 <p>pojedyncze łóżko: 5</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faShower}/>
+                                <FontAwesomeIcon className="icon" icon={faShower}/>
                                 <p>łazienka</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon className="icon" icon={faWifi} />
+                                <p>wi-fi</p>
+                            </li>
+                            <li>
+                                <img className="icon dog" src={no_dogs} alt='dog'/>
+                                <p>zakaz zwierząt</p>
                             </li>
                         </div>
                         <div className='info_photo c2'>
@@ -363,20 +381,28 @@ const Yurts = () => {
                         <h2>Ogień</h2>
                         <div className='info_logo'>
                             <li>
-                                <FontAwesomeIcon icon={faUserGroup}/>
+                                <FontAwesomeIcon className="icon" icon={faUserGroup}/>
                                 <p>do 4 osób</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faMaximize}/>
+                                <FontAwesomeIcon className="icon" icon={faMaximize}/>
                                 <p>30 m2</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faBed}/>
+                                <FontAwesomeIcon className="icon" icon={faBed}/>
                                 <p>podwójne łóżko: 2</p>
                             </li>
                             <li>
-                                <FontAwesomeIcon icon={faShower}/>
+                                <FontAwesomeIcon className="icon" icon={faShower}/>
                                 <p>łazienka</p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon className="icon" icon={faWifi} />
+                                <p>wi-fi</p>
+                            </li>
+                            <li>
+                                <img className="icon dog" src={no_dogs} alt='dog'/>
+                                <p>zakaz zwierząt</p>
                             </li>
                         </div>
                         <div className='info_photo c3'>
