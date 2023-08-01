@@ -12,7 +12,6 @@ const Maps = () => {
     )
 }
 
-
 function Map() {
     const center = useMemo(() => ({
         lat: 50.41730290823196,
