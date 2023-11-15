@@ -8,18 +8,25 @@ import icon_mail from '../assets/mail.svg';
 import practices from '../assets/dobre_praktyki.png'
 import senior from '../assets/senior.png'
 import Maps from './Maps';
+import { getTranslation } from './translations/LanguageUtils';
+import { useLanguage } from './translations/LanguageContext';
 
 const Footer = () => {
+    const { currentLanguage } = useLanguage();
     return (
         <section id='footer' className='footer'>
             <div className='phone_mail'>
                 <a href="tel:+48606740427">
                     <img src={icon_phone} alt="phone"/>
-                    <p>+48 606 740 427</p>
+                    <p>
+                        +48 606 740 427
+                    </p>
                 </a>
                 <a href="mailto:domyslonca@gmail.com">
                     <img src={icon_mail} alt="mail"/>
-                    <p>domyslonca@gmail.com</p>
+                    <p>
+                        domyslonca@gmail.com
+                    </p>
                 </a>
             </div>
             <div className='adres'>
@@ -47,7 +54,9 @@ const Footer = () => {
                             behavior: "smooth",
                         });
                     }}>
-                    <p>Regulamin i polityka prywatności</p>
+                    <p>
+                        {getTranslation('footer_policy', currentLanguage)}
+                    </p>
                 </Link>
             </div>
             <div className='links'>

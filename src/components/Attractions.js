@@ -24,8 +24,11 @@ import photo17 from "../assets/kon5.jpeg"
 import photo18 from "../assets/zabawa1.jpeg"
 import photo19 from "../assets/zabawa2.jpeg"
 import photo20 from "../assets/zabawa3.jpeg"
+import { getTranslation } from './translations/LanguageUtils';
+import { useLanguage } from './translations/LanguageContext';
 
 const Attractions = () => {
+    const { currentLanguage } = useLanguage();
 
     const images = [
         {
@@ -114,35 +117,32 @@ const Attractions = () => {
         <>
             <Header/>
             <section id='attractions' className='pages'>
-                <h1>Czas wolny</h1>
+                <h1>
+                    {getTranslation('free_time', currentLanguage)}
+                </h1>
                 <div className='att_carousel'>
                     <ImageGallery items={images}/>
                 </div>
                 <div className='att_text'>
                     <p>
-                        Jesteśmy w Sudetach, a to oznacza jedno: malownicze góry, błędne skały, stoki narciarskie,
-                        górskie rzeki, tajemnicze podziemia i sztolnie z bogatą historią, zabytki przyrody i
-                        architektury, single tracki. Tutaj każdy znajdzie coś dla siebie, nieważne czy lubi wspinaczki,
-                        przejażdżki rowerowe, konne, zwiedzanie, leniuchowanie czy narty.<br/>
+                        {getTranslation('free_time_text1', currentLanguage)}
                         <br/>
-                        Na terenie glampingu znajduje się grill, tandyr, miejsce na ognisko, balia, sauna oraz strefa
-                        odpoczynku, taras z hamakami i poduszkami, z którego można podziwiać przepiękne góry.<br/>
                         <br/>
-                        Tak jak w dalekiej Azji, same jurty nie posiadają własnej kuchni. Najczęściej cała wioska ma
-                        wspólne ognisko, gdzie przyrządza jedzenie. U nas jest bardziej nowocześnie, kuchnia znajduje
-                        się w kontenerze sanitarnym i jest w pełni wyposażona.<br/>
+                        {getTranslation('free_time_text2', currentLanguage)}
                         <br/>
-                        A co dla dla dzieci?<br/>
-                        Kto marzy o wakacjach w mongolskiej jurcie, ręka do góry! Chyba nie ma takiego dzieciaka, które
-                        nie chciałoby spędzić nocy w ogromnym namiocie z widokiem na niebo. Nasze jurty są przyjazne
-                        rodzinom z dziećmi. Mamy tu plac zabaw i ogród, w którym można bawić się do upadłego. I są też
-                        zwierzaki, czekające na głaskanie i psoty.
+                        <br/>
+                        {getTranslation('free_time_text3', currentLanguage)}
+                        <br/>
+                        <br/>
+                        {getTranslation('free_time_text4', currentLanguage)}
+                        <br/>
+                        {getTranslation('free_time_text5', currentLanguage)}
                     </p>
                     <Link className='button'
                           onClick={() => {
                               window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
                           }}>
-                        Zarezerwuj
+                        {getTranslation('book_now', currentLanguage)}
                     </Link>
                 </div>
             </section>

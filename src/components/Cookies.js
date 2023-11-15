@@ -1,7 +1,10 @@
 import CookieConsent from "react-cookie-consent";
 import {Link} from "react-router-dom";
+import { getTranslation } from './translations/LanguageUtils';
+import { useLanguage } from './translations/LanguageContext';
 
 const Cookies = () => {
+    const { currentLanguage } = useLanguage();
     return (
         <>
             <CookieConsent
@@ -12,11 +15,10 @@ const Cookies = () => {
                 buttonStyle={{background: "orange", color: "black", fontSize: "17px", padding: '0.6rem 1rem'}}
                 expires={150}
             >
-                Strona korzysta z plików cookie w celu poprawienia jej dostępności, personalizacji czy aby zbierać dane,
-                dotyczące ruchu na stronie. Każdy może sam decydować o tym czy dopuszcza pliki cookies, ustawiając
-                odpowiednio swoją przeglądarkę.
+                {getTranslation('cookie1', currentLanguage)}
                 <br/>
-                Więcej informacji znajdziesz w{" "}
+                {getTranslation('cookie2', currentLanguage)}
+                {" "}
                 <Link to="/privacy_policy"
                       className='terms_cookies'
                       onClick={() => {
@@ -26,9 +28,8 @@ const Cookies = () => {
                               behavior: "smooth",
                           });
                       }}>
-                    Polityce Prywatności i Regulaminie
+                    {getTranslation('cookie_policy', currentLanguage)}
                 </Link>
-                .
             </CookieConsent>
         </>
     )

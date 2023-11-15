@@ -5,20 +5,38 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendarDays, faArrowRightLong} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import bon from '../assets/bon.jpeg'
+import { getTranslation } from './translations/LanguageUtils';
+import { useLanguage } from './translations/LanguageContext';
 
 const Prices = () => {
+    const { currentLanguage } = useLanguage();
     return (
         <>
             <Header/>
             <section id='prices' className='pages'>
-                <h1>Cennik</h1>
-                <h3>Minimum 2 doby</h3>
+                <h1>
+                    {getTranslation('prices_title', currentLanguage)}
+                </h1>
+                <h3>
+                    {getTranslation('prices_text1', currentLanguage)}
+                </h3>
                 <div className='price_text'>
-                    <h5><b>Sezon wysoki</b></h5><br/>
+                    <h5>
+                        <b>
+                        {getTranslation('prices_text2', currentLanguage)}
+                        </b>
+                    </h5>
+                    <br/>
                     <div className='seasons price'>
                         <p>
-                            czerwiec <FontAwesomeIcon icon={faArrowRightLong}/> wrzesień<br/>
-                            grudzień <FontAwesomeIcon icon={faArrowRightLong}/> luty<br/>
+                            {getTranslation('june', currentLanguage)} 
+                            <FontAwesomeIcon icon={faArrowRightLong}/> 
+                            {getTranslation('september', currentLanguage)}
+                            <br/>
+                            {getTranslation('december', currentLanguage)} 
+                            <FontAwesomeIcon icon={faArrowRightLong}/> 
+                            {getTranslation('february', currentLanguage)}
+                            <br/>
                         </p>
                         <Link
                               onClick={() => {
@@ -26,14 +44,28 @@ const Prices = () => {
                               }}>
                             <FontAwesomeIcon icon={faCalendarDays} className='calendar first'/>
                         </Link>
-                        <h4>500 zł/doba</h4>
+                        <h4>
+                            500 PLN /
+                            {getTranslation('prices_day', currentLanguage)}
+                        </h4>
                     </div>
                     <span/>
-                    <h5><b>Sezon niski</b></h5><br/>
+                    <h5>
+                        <b>
+                            {getTranslation('prices_text3', currentLanguage)}
+                        </b>
+                    </h5>
+                    <br/>
                     <div className='seasons price'>
                         <p>
-                            październik <FontAwesomeIcon icon={faArrowRightLong}/> listopad<br/>
-                            marzec <FontAwesomeIcon icon={faArrowRightLong}/> maj<br/>
+                            {getTranslation('october', currentLanguage)}
+                            <FontAwesomeIcon icon={faArrowRightLong}/> 
+                            {getTranslation('november', currentLanguage)}
+                            <br/>
+                            {getTranslation('march', currentLanguage)}
+                            <FontAwesomeIcon icon={faArrowRightLong}/>
+                            {getTranslation('may', currentLanguage)} 
+                            <br/>
                         </p>
                         <Link
                             onClick={() => {
@@ -41,47 +73,79 @@ const Prices = () => {
                             }}>
                             <FontAwesomeIcon icon={faCalendarDays} className='calendar second'/>
                         </Link>
-                        <h4>450 zł/doba</h4>
+                        <h4>
+                            450 PLN /
+                            {getTranslation('prices_day', currentLanguage)} 
+                        </h4>
                     </div>
                     <span/>
                     <p className='bon'>
-                        Akceptujemy bony turystyczne<br/>
+                        {getTranslation('prices_text4', currentLanguage)}
+                        <br/>
                         <img src={bon} alt="Bon turystyczny"/>
                     </p>
                     <div className='information price'>
-                        <h3>Informacje</h3>
+                        <h3>
+                            {getTranslation('prices_text5', currentLanguage)}
+                        </h3>
                         <p>
-                            Doba hotelowa rozpoczyna się o godz. 15:00 w dniu przyjazdu.<br/>
-                            Pokoje należy opuścić do godziny 12:00 w dniu wyjazdu.<br/>
+                            {getTranslation('prices_text6', currentLanguage)}
+                            <br/>
+                            {getTranslation('prices_text7', currentLanguage)}
+                            <br/>
                         </p>
                     </div>
                     <div className='additional price'>
-                        <h3>Dodatki</h3>
+                        <h3>
+                            {getTranslation('prices_text8', currentLanguage)}
+                        </h3>
                         <p>
-                            <li>Balia płatna – 150 zł</li>
-                            <li>Sauna płatna – 150 zł<br/></li>
-                            <li>Jazdy konne – do umówienia na miejscu lub przez telefon<br/></li>
-                            <li>Przejażdżki na naszych motocyklach – do umówienia na miejscu lub przez telefon<br/></li>
+                            <li>
+                                {getTranslation('prices_text9', currentLanguage)}
+                                – 150 PLN
+                            </li>
+                            <li>
+                                {getTranslation('prices_text10', currentLanguage)}
+                                – 150 PLN
+                                <br/>
+                            </li>
+                            <li>
+                                {getTranslation('prices_text11', currentLanguage)}
+                                <br/>
+                            </li>
+                            <li>
+                                {getTranslation('prices_text12', currentLanguage)}
+                                <br/>
+                            </li>
                             <br/>
-                            <li>10% rabatu dla osób podróżujących motocyklami<br/></li>
+                            <li>
+                                {getTranslation('prices_text13', currentLanguage)}
+                                <br/>
+                            </li>
                         </p>
                     </div>
                     <div className='deposit price'>
-                        <h3>Zadatek</h3>
+                        <h3>
+                            {getTranslation('prices_text14', currentLanguage)}
+                        </h3>
                         <p>
-                            W celu potwierdzenia rezerwacji należy wpłacić zadatek w wysokość 30%<br/>
+                            {getTranslation('prices_text15', currentLanguage)}
+                            <br/>
                         </p>
                         <p>
                             <span>
-                            Domy Słońca Marek Kmiecik<br/>
-                            Jaszkowa Dolna 18 57-312<br/>
-                            Nr rachunku bankowego: 54 1090 2385 0000 0001 4493 6234<br/>
+                                Domy Słońca Marek Kmiecik
+                                <br/>
+                                Jaszkowa Dolna 18 57-312
+                                <br/>
+                                {getTranslation('prices_text16', currentLanguage)}
+                                <br/>
+                                54 1090 2385 0000 0001 4493 6234
+                                <br/>
                             </span>
                         </p>
                         <p>
-                            Jeśli za pobyt ma zostać wystawiona faktura, prosimy o poinformowaniu takiej informacji w
-                            tytule
-                            przelewu z podaniem nazwy firmy oraz numerem NIP.
+                            {getTranslation('prices_text17', currentLanguage)}
                         </p>
                     </div>
                 </div>

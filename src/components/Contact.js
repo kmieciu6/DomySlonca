@@ -5,8 +5,11 @@ import Header from "./header/Header";
 import Footer from "./Footer";
 import thanks from '../assets/thanks.jpeg'
 import {Link} from "react-router-dom";
+import { getTranslation } from './translations/LanguageUtils';
+import { useLanguage } from './translations/LanguageContext';
 
 function Contact() {
+    const { currentLanguage } = useLanguage();
     let errEmail = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 
     const [state, handleSubmit] = useForm("xeqwozkp");
@@ -16,7 +19,9 @@ function Contact() {
                 <Header/>
                 <section id='contact' className='pages'>
                     <div className='thanks'>
-                        <h1>Dziękujemy za kontakt</h1>
+                        <h1>
+                            {getTranslation('thank_for_contact', currentLanguage)}
+                        </h1>
                         <img src={thanks} alt=""/>
                         <Link to='/'>
                             <button className='button'
@@ -27,7 +32,7 @@ function Contact() {
                                             behavior: "smooth",
                                         });
                                     }}>
-                                Wróć
+                                {getTranslation('come_back', currentLanguage)}
                             </button>
                         </Link>
                     </div>
@@ -40,7 +45,9 @@ function Contact() {
         <>
             <Header/>
             <section id='contact' className='pages'>
-                <h1>Kontakt</h1>
+                <h1>
+                    {getTranslation('contact', currentLanguage)}
+                </h1>
                 <Formik
                     initialValues={{
                         email: '',
@@ -51,18 +58,20 @@ function Contact() {
                     }}
 
                     validate={values => {
+                        const messages = getTranslation('validationMessages', currentLanguage);
+
                         const errors = {};
                         if (!values.email || errEmail.test(values.email) === false) {
-                            errors.email = 'Email nieprawidłowy';
+                            errors.email = messages.emailInvalid;
                         }
                         if (values.name.length < 2) {
-                            errors.name = 'Imię i nazwisko powinno mieć co najmniej 2 znaki';
+                            errors.name = messages.nameTooShort;
                         }
                         if (values.message.length < 50) {
-                            errors.message = 'Wiadomość powinna mieć co najmniej 50 znaków';
+                            errors.message = messages.messageTooShort;
                         }
                         if (values.agree === false) {
-                            errors.agree = 'Wymagana akceptacja';
+                            errors.agree = messages.agreeRequired;
                         }
                         return errors;
                     }}
@@ -74,49 +83,57 @@ function Contact() {
                          }) => (
                             <form onSubmit={handleSubmit}>
                                 <label className='label'>
-                                    <h5>Email</h5>
+                                    <h5>
+                                        {getTranslation('form_email', currentLanguage)}
+                                    </h5>
                                     <Field
                                         id="mail"
                                         type="text"
                                         name="email"
                                         className='input'
-                                        placeholder='twój@email.com'
+                                        placeholder={getTranslation('placeholder_email', currentLanguage)}
                                     />
                                     <ErrorMessage name="email" render={msg => <p className="alert">{msg}</p>}/>
                                 </label>
 
                                 <label className='label'>
-                                    <h5>Imię i nazwisko</h5>
+                                    <h5>
+                                        {getTranslation('form_name', currentLanguage)}
+                                    </h5>
                                     <Field
                                         id="name"
                                         type="text"
                                         name="name"
                                         className='input'
-                                        placeholder='Imię i nazwisko'
+                                        placeholder={getTranslation('placeholder_name', currentLanguage)}
                                     />
                                     <ErrorMessage name="name" render={msg => <p className="alert">{msg}</p>}/>
                                 </label>
 
                                 <label className='label'>
-                                    <h5>Numer telefonu (opcjonalne)</h5>
+                                    <h5>
+                                        {getTranslation('form_number', currentLanguage)}
+                                    </h5>
                                     <Field
                                         id="number"
                                         type='number'
                                         name='number'
                                         className='input'
-                                        placeholder='+48 123 456 789'
+                                        placeholder={getTranslation('placeholder_number', currentLanguage)}
                                     />
                                 </label>
 
                                 <label className='label'>
-                                    <h5>Wiadomość</h5>
+                                    <h5>
+                                        {getTranslation('form_message', currentLanguage)}
+                                    </h5>
                                     <Field
                                         as='textarea'
                                         id="message"
                                         type='text'
                                         name='message'
                                         className='input'
-                                        placeholder='Treść wiadomości'
+                                        placeholder={getTranslation('placeholder_message', currentLanguage)}
                                         rows={5}
                                     />
                                     <ErrorMessage name="message" render={msg => <p className="alert">{msg}</p>}/>
@@ -130,7 +147,7 @@ function Contact() {
                                         className='checkbox_agree'
                                     />
                                     <h5>
-                                        Wyrażam zgodę na przetwarzanie danych osobowych oraz akceptuję
+                                        {getTranslation('form_personal_data1', currentLanguage)}
                                         <Link
                                             to='/privacy_policy'
                                             className='link'
@@ -140,9 +157,9 @@ function Contact() {
                                                     left: 0,
                                                     behavior: "smooth",
                                                 });
-                                            }}> regulamin i politykę prywatności
+                                            }}> 
+                                                {getTranslation('form_personal_data2', currentLanguage)}
                                         </Link>
-                                        .
                                     </h5>
                                     <span className="checkmark"/>
                                     <ErrorMessage name="agree"
@@ -153,7 +170,7 @@ function Contact() {
                                     type="submit"
                                     disabled={state.submitting}
                                     className='button'>
-                                    Wyślij
+                                    {getTranslation('form_submit', currentLanguage)}
                                 </button>
                             </form>
                         )

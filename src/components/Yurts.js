@@ -46,7 +46,12 @@ import etno_photo7 from "../assets/w_etno5.jpeg";
 import etno_photo8 from "../assets/w_etno6.jpeg";
 import etno_photo9 from "../assets/w_etno7.jpeg";
 
+import { getTranslation } from './translations/LanguageUtils';
+import { useLanguage } from './translations/LanguageContext';
+
 const Yurts = () => {
+
+    const { currentLanguage } = useLanguage();
 
     const [index1, setIndex1] = useState(0);
     const handleSelect1 = (selectedIndex) => {
@@ -72,84 +77,106 @@ const Yurts = () => {
         <>
             <Header/>
             <section id='yurts' className='pages'>
-                <h1>Nasze jurty</h1>
+                <h1>
+                    {getTranslation('our_yurts', currentLanguage)}
+                </h1>
                 <div className='yurts'>
                     <Scroll to={'sun'} smooth duration={500} className='yurt'>
                         <div className='photo'/>
                         <div className='text'>
-                            <h3>Słońce</h3>
+                            <h3>
+                                {getTranslation('sun_title', currentLanguage)}
+                            </h3>
                         </div>
                     </Scroll>
                     <Scroll to={'wind'} smooth duration={500} className='yurt'>
                         <div className='photo'/>
                         <div className='text'>
-                            <h3>Wiatr</h3>
+                            <h3>
+                                {getTranslation('wind_title', currentLanguage)}
+                            </h3>
                         </div>
                     </Scroll>
                     <Scroll to={'fire'} smooth duration={500} className='yurt'>
                         <div className='photo'/>
                         <div className='text'>
-                            <h3>Ogień</h3>
+                            <h3>
+                                {getTranslation('fire_title', currentLanguage)}
+                            </h3>
                         </div>
                     </Scroll>
                     <Scroll to={'etno'} smooth duration={500} className='yurt'>
                         <div className='photo'/>
                         <div className='text'>
-                            <h3>Etno</h3>
+                            <h3>
+                                {getTranslation('etno_title', currentLanguage)}
+                            </h3>
                         </div>
                     </Scroll>
                 </div>
                 <div className='yurts_info'>
                     <div id='sun' className='yurta'>
-                        <h2>Słońce</h2>
+                        <h2>
+                            {getTranslation('sun_title', currentLanguage)}
+                        </h2>
                         <div className='info_logo'>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faUserGroup} />
-                                <p>do 5 osób</p>
+                                <p>
+                                    {getTranslation('yurts_people1', currentLanguage)}
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faMaximize}/>
-                                <p>35 m2</p>
+                                <p>
+                                    35 m2
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faBed}/>
-                                <p>podwójne łóżko: 1</p>
+                                <p>
+                                    {getTranslation('yurts_bed2', currentLanguage)}
+                                    1
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faBed}/>
-                                <p>pojedyncze łóżko: 3</p>
+                                <p>
+                                    {getTranslation('yurts_bed1', currentLanguage)}
+                                    3
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faShower}/>
-                                <p>łazienka</p>
+                                <p>
+                                    {getTranslation('yurts_bath', currentLanguage)}
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faWifi} />
-                                <p>wi-fi</p>
+                                <p>
+                                    wi-fi
+                                </p>
                             </li>
                             <li>
                                 <img className="icon dog" src={no_dogs} alt='dog'/>
-                                <p>zakaz zwierząt</p>
+                                <p>
+                                    {getTranslation('yurts_animal', currentLanguage)}
+                                </p>
                             </li>
                         </div>
                         <div className='info_photo c1'>
                             <p>
-                                Jurta Słońce - panuje w niej niesamowita jasność, właściwie niezależnie od pogody.<br/>
-                                Jurta stanowi jedno pomieszczenie o powierzchni 30m2 i wysokości 3,50m. Połączone
-                                łącznikiem
-                                z łazienką. Wyposażyliśmy ją w komplet mebli dobranych na wzór oryginalnych, ręcznie
-                                i
-                                samodzielnie malując nasze sosnowe meble, wykorzystując oryginalne ornamenty i
-                                kolorystykę.<br/>
-                                W połączeniu z elementami jurty malowanymi przez Buriatów powstała piękna
-                                całość.<br/>
+                                {getTranslation('yurts_text1', currentLanguage)}
                                 <br/>
-                                Jurtę wyposażyliśmy w system ogrzewania elektrycznego pozwalający
-                                na komfortowe zamieszkiwanie w niej przez cały rok.<br/>
-                                Szklana kopuła (TONO) zwieńczająca jurtę dopełnia efektu przebywania w świecie
-                                stepów
-                                Azji
-                                Środkowej – widać przez nią nocne niebo.
+                                {getTranslation('yurts_text2', currentLanguage)}
+                                <br/>
+                                {getTranslation('yurts_text3', currentLanguage)}
+                                <br/>
+                                <br/>
+                                {getTranslation('yurts_text4', currentLanguage)}
+                                <br/>
+                                {getTranslation('yurts_text5', currentLanguage)}
                             </p>
                             <div className='carousel'>
                                 <Carousel activeIndex={index1} onSelect={handleSelect1}>
@@ -223,39 +250,57 @@ const Yurts = () => {
                               onClick={() => {
                                   window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
                               }}>
-                            Zarezerwuj
+                            {getTranslation('book_now', currentLanguage)}
                         </Link>
                     </div>
                     <div id='wind' className='yurta'>
-                        <h2>Wiatr</h2>
+                        <h2>
+                            {getTranslation('wind_title', currentLanguage)}
+                        </h2>
                         <div className='info_logo'>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faUserGroup}/>
-                                <p>do 7 osób</p>
+                                <p>
+                                    {getTranslation('yurts_people2', currentLanguage)}
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faMaximize}/>
-                                <p>35 m2</p>
+                                <p>
+                                    35 m2
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faBed}/>
-                                <p>podwójne łóżko: 2</p>
+                                <p>
+                                    {getTranslation('yurts_bed2', currentLanguage)}
+                                    2
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faBed}/>
-                                <p>pojedyncze łóżko: 5</p>
+                                <p>
+                                    {getTranslation('yurts_bed1', currentLanguage)}
+                                    5
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faShower}/>
-                                <p>łazienka</p>
+                                <p>
+                                    {getTranslation('yurts_bath', currentLanguage)}
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faWifi} />
-                                <p>wi-fi</p>
+                                <p>
+                                    wi-fi
+                                </p>
                             </li>
                             <li>
                                 <img className="icon dog" src={no_dogs} alt='dog'/>
-                                <p>zakaz zwierząt</p>
+                                <p>
+                                    {getTranslation('yurts_animal', currentLanguage)}
+                                </p>
                             </li>
                         </div>
                         <div className='info_photo c2'>
@@ -354,66 +399,67 @@ const Yurts = () => {
                                 </Carousel>
                             </div>
                             <p>
-                                Jurta Wiatr - jej budowa to było nie lada wyzwanie i
-                                właściwie
-                                powinniśmy ją nazwać WICHER. Właśnie taka pogoda panowała w czasie jej montażu.
-                                Niemniej
-                                jednak udało się wspaniale. Mieliśmy już doświadczenie budowy, więc pomimo
-                                przeciwności
-                                zdołaliśmy ją postawić. Jej niesamowity kolor bardzo ładnie komponuje się z
-                                otoczeniem,
-                                zwłaszcza kwitnącym sadem i okolicznymi górami. Jej wykończenie oraz wyposażenie
-                                wskazuje na
-                                XXI wiek.... jesteśmy przecież w Europie.<br/>
-                                Przyjazna dla rodzin z dziećmi, ciepła (cały rok) przytulna, komfortowa, a
-                                jednocześnie
-                                autentyczna.
+                                {getTranslation('yurts_text6', currentLanguage)}
+                                <br/>
+                                {getTranslation('yurts_text7', currentLanguage)}
                             </p>
                         </div>
                         <Link className='button'
                               onClick={() => {
                                   window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
                               }}>
-                            Zarezerwuj
+                            {getTranslation('book_now', currentLanguage)}
                         </Link>
                     </div>
                     <div id='fire' className='yurta'>
-                        <h2>Ogień</h2>
+                        <h2>
+                            {getTranslation('fire_title', currentLanguage)}
+                        </h2>
                         <div className='info_logo'>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faUserGroup}/>
-                                <p>do 4 osób</p>
+                                <p>
+                                    {getTranslation('yurts_people3', currentLanguage)}
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faMaximize}/>
-                                <p>30 m2</p>
+                                <p>
+                                    30 m2
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faBed}/>
-                                <p>podwójne łóżko: 2</p>
+                                <p>
+                                    {getTranslation('yurts_bed2', currentLanguage)}
+                                    2
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faShower}/>
-                                <p>łazienka</p>
+                                <p>
+                                    {getTranslation('yurts_bath', currentLanguage)}
+                                </p>
                             </li>
                             <li>
                                 <FontAwesomeIcon className="icon" icon={faWifi} />
-                                <p>wi-fi</p>
+                                <p>
+                                    wi-fi
+                                </p>
                             </li>
                             <li>
                                 <img className="icon dog" src={no_dogs} alt='dog'/>
-                                <p>zakaz zwierząt</p>
+                                <p>
+                                    {getTranslation('yurts_animal', currentLanguage)}
+                                </p>
                             </li>
                         </div>
                         <div className='info_photo c3'>
                             <p>
-                                Jurta Ogień - ta jurta oczaruje Was swoim boho stylem. Panuje w niej spokój i
-                                harmonia.<br/>
+                                {getTranslation('yurts_text8', currentLanguage)}
                                 <br/>
-                                Tutaj znajdziecie wytchnienie od miejskiego zgiełku, a wszystko przez szklaną kopułę -
-                                TONO, przez którą w jurcie można podziwiać gwiazdy. Jest ona całoroczna, ogrzewana
-                                piecykiem elektrycznym, który imituje prawdziwy kominek. Bezpośrednio w jurcie znajduje
-                                się piękna łazienka.
+                                <br/>
+                                {getTranslation('yurts_text9', currentLanguage)}
                             </p>
                             <div className='carousel'>
                                 <Carousel activeIndex={index3} onSelect={handleSelect3}>
@@ -487,11 +533,13 @@ const Yurts = () => {
                               onClick={() => {
                                   window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
                               }}>
-                            Zarezerwuj
+                            {getTranslation('book_now', currentLanguage)}
                         </Link>
                     </div>
                     <div id='etno' className='yurta'>
-                        <h2>Etno</h2>
+                        <h2>
+                            {getTranslation('etno_title', currentLanguage)}
+                        </h2>
                         <div className='info_photo c4'>
                             <div className='carousel'>
                                 <Carousel activeIndex={index4} onSelect={handleSelect4}>
@@ -579,12 +627,10 @@ const Yurts = () => {
                                 </Carousel>
                             </div>
                             <p>
-                                Jurta Etno - w środku nie znajdziecie mebli,
-                                wyposażona jest jedynie w oryginalne sprzęty. Dzięki temu, na podłodze może nocować
-                                do 10 osób.
-                                Tutaj odbywają się przeróżne wydarzenia, imprezy czy warsztaty: joga, kursy,
-                                spotkania różnych grup, imprezy rodzinne i towarzyskie -
-                                możliwość wstawienia do jurty stołów.
+                                {getTranslation('yurts_text10', currentLanguage)}
+                                <br/>
+                                <br/>
+                                {getTranslation('yurts_text11', currentLanguage)}
                             </p>
                         </div>
                     </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
+import { getTranslation } from '../translations/LanguageUtils';
+import { useLanguage } from '../translations/LanguageContext';
 
 const StyledMenu = styled.nav`
   @media (min-width: 1024px) {
@@ -75,36 +77,49 @@ const StyledBurger = styled.button`
 `
 
 const Burger = ({open, setOpen}) => {
-    const handleIsOpen = () => {
-        setOpen(!open)
-    }
-    const closeSideBar = () => {
-        setOpen(false)
-    }
-    return (
-        <>
-            <StyledBurger open={open} onClick={() => setOpen(!open)}>
-                <span/>
-                <span/>
-                <span/>
-            </StyledBurger>
-            <StyledMenu open={open} onClose={handleIsOpen}>
-                <nav onClick={closeSideBar}>
-                    <Link to="/">Strona główna</Link>
-                    <Link to="/yurts">Nasze jurty</Link>
-                    <Link to='/attractions'>Atrakcje</Link>
-                    <Link to='/prices'>Cennik</Link>
-                    <Link className='res'
-                          onClick={() => {
-                              window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
-                          }}>
-                        Rezerwuj
-                    </Link>
-                    <Link to='/contact'>Kontakt</Link>
-                </nav>
-            </StyledMenu>
-        </>
-    )
+
+  const { currentLanguage } = useLanguage();
+
+  const handleIsOpen = () => {
+      setOpen(!open)
+  }
+  const closeSideBar = () => {
+      setOpen(false)
+  }
+  return (
+      <>
+          <StyledBurger open={open} onClick={() => setOpen(!open)}>
+              <span/>
+              <span/>
+              <span/>
+          </StyledBurger>
+          <StyledMenu open={open} onClose={handleIsOpen}>
+              <nav onClick={closeSideBar}>
+                  <Link to="/">
+                    {getTranslation('main_page', currentLanguage)}
+                  </Link>
+                  <Link to="/yurts">                    
+                    {getTranslation('our_yurts', currentLanguage)}
+                  </Link> 
+                  <Link to='/attractions'>
+                    {getTranslation('attractions', currentLanguage)}
+                  </Link>
+                  <Link to='/prices'>
+                    {getTranslation('pricing', currentLanguage)}
+                  </Link>
+                  <Link className='res'
+                        onClick={() => {
+                            window.open('https://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
+                        }}>
+                    {getTranslation('book', currentLanguage)}
+                  </Link>
+                  <Link to='/contact'>
+                    {getTranslation('contact', currentLanguage)}
+                  </Link>
+              </nav>
+          </StyledMenu>
+      </>
+  )
 }
 
 export default Burger;
