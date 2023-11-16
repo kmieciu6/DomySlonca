@@ -41,7 +41,6 @@ const Home = () => {
                               onClick={() => {
                                   window.open('http://domyslonca.hotelsystems.pl/booking', '_blank', 'noreferrer')
                               }}>
-                            Zarezerwuj
                             {getTranslation('book_now', currentLanguage)}
                         </Link>
                     </div>
