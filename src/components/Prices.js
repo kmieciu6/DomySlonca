@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendarDays, faArrowRightLong} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
-import bon from '../assets/bon.jpeg'
+// import bon from '../assets/bon.jpeg'
 import { getTranslation } from './translations/LanguageUtils';
 import { useLanguage } from './translations/LanguageContext';
 
@@ -79,16 +79,21 @@ const Prices = () => {
                         </h4>
                     </div>
                     <span/>
-                    <p className='bon'>
+                    {/* <p className='bon'>
                         {getTranslation('prices_text4', currentLanguage)}
                         <br/>
                         <img src={bon} alt="Bon turystyczny"/>
-                    </p>
+                    </p> */}
                     <div className='information price'>
                         <h3>
                             {getTranslation('prices_text5', currentLanguage)}
                         </h3>
                         <p>
+                            {getTranslation('prices_text18', currentLanguage)}
+                            <br/>
+                            {getTranslation('prices_text19', currentLanguage)}
+                            <br/>
+                            <br/>
                             {getTranslation('prices_text6', currentLanguage)}
                             <br/>
                             {getTranslation('prices_text7', currentLanguage)}

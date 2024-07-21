@@ -77,7 +77,9 @@
     "prices_text14": "Deposit",
     "prices_text15": "To confirm the reservation, a deposit of 30% must be paid",
     "prices_text16": "Bank account number: ",
-    "prices_text17": "If an invoice is to be issued for the stay, please inform us in the transfer title, providing the company name and VAT number.",
+    "prices_text17": "If an invoice is to be issued for the stay, please enter this information in the transfer title, including the company name and NIP number.",
+    "prices_text18": "Holidays, long weekends, New Year's Eve - regular prices do not apply.",
+    "prices_text19": "Special occasions (bachelor, hen, birthday, etc.) are priced individually after telephone contact.",
         
     "terms": "Terms and Conditions",
     "terms_text1": "1. Check-in from 3:00 PM, check-out by 12:00 PM.",

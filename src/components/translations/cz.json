@@ -77,7 +77,9 @@
     "prices_text14": "Záloha",
     "prices_text15": "K potvrzení rezervace je třeba zaplatit zálohu ve výši 30%",
     "prices_text16": "Číslo bankovního účtu: ",
-    "prices_text17": "Pokud má být vystaven účet za pobyt, informujte nás prosím v titulu převodu s uvedením názvu společnosti a DIČ.",
+    "prices_text17": "Pokud má být za pobyt vystavena faktura, uveďte prosím tyto údaje do názvu převodu, včetně názvu společnosti a čísla NIP.",
+    "prices_text18": "Prázdniny, prodloužené víkendy, Silvestr - neplatí běžné ceny.",
+    "prices_text19": "Speciální příležitosti (bakalář, slepice, narozeniny atd.) naceňujeme individuálně po telefonickém kontaktu.",
         
     "terms": "Podmínky",
     "terms_text1": "1. Příjezd od 15:00, odjezd do 12:00.",
