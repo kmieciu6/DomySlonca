@@ -32,10 +32,21 @@ const Home = () => {
                             <br/>
                             <br/>
                             {getTranslation('home_text3', currentLanguage)}
-                            <br/>
                         </p>
                         <h3>
                             {getTranslation('home_text4', currentLanguage)}
+                        </h3>
+                        <Link className='button'
+                              onClick={() => {
+                                  window.open('https://www.google.com/maps/@50.4174915,16.6665408,3a,85.7y,45.21h,92.7t/data=!3m7!1e1!3m5!1sAF1QipOyj0dmw2a5jIm4x6miu7wfVCITZ1v9qXfbA9QQ!2e10!3e12!7i6528!8i3264?entry=ttu', '_blank', 'noreferrer')
+                              }}>
+                            {getTranslation('look', currentLanguage)}
+                        </Link>
+                        <br/>
+                        <br/>
+
+                        <h3>
+                            {getTranslation('home_text5', currentLanguage)}
                         </h3>
                         <Link className='button'
                               onClick={() => {
