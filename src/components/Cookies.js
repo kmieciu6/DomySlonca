@@ -9,7 +9,7 @@ const Cookies = () => {
         <>
             <CookieConsent
                 location="bottom"
-                buttonText="Rozumiem i akceptuje"
+                buttonText={getTranslation('understand_and_accept', currentLanguage)}
                 cookieName="myAwesomeCookieName2"
                 style={{background: "#2B373B", opacity: .9}}
                 buttonStyle={{background: "orange", color: "black", fontSize: "17px", padding: '0.6rem 1rem'}}
