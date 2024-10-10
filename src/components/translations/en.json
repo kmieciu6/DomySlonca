@@ -44,9 +44,9 @@
     "form_personal_data2": "regulations and privacy policy.",
     "form_submit": "Send",
 
-    "cookie1": "The website uses cookies to improve its accessibility, personalize it and collect data on website traffic. Everyone can decide for themselves whether to allow cookies by setting their browser accordingly.",
-    "cookie2": "More information can be found in the ",
-    "cookie_policy": "Privacy Policy and Regulations.",
+    "cookie1": "The website uses cookies to improve its accessibility, personalize it, and collect data on website traffic. Everyone can decide for themselves whether to accept cookies by configuring their browser accordingly.",
+    "cookie2": "For more information, see the ",
+    "cookie_policy": "Privacy Policy and Terms and Conditions.",
     
     "footer_policy": "Terms and conditions and privacy policy",
     
@@ -125,7 +125,8 @@
     "terms_text39": "The user can independently and at any time change the settings regarding cookies, specifying the conditions for their storage and access by cookies to the user's device. The changes to the settings referred to in the preceding sentence, the user can make using the settings of the web browser or the configuration of the service. These settings can be changed, in particular, to block the automatic handling of cookies in the web browser settings or to inform about their every placement of cookies on the user's device. Detailed information on the possibilities and ways of handling cookies is available in the software settings (web browser).",
     "terms_text40": "Below, we present how to change the settings of web browsers regarding the use of cookies:",
     "terms_text41": "The user can delete cookies at any time using the available functions in the web browser he uses. Limiting the use of cookies may affect some functionalities available on the Serwis internet page.",
-        
+    "understand_and_accept": "I understand and accept",
+
     "sun_title": "Sun",
     "wind_title": "Wind",
     "fire_title": "Fire",

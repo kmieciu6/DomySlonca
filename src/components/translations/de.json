@@ -44,9 +44,9 @@
     "form_personal_data2": "Bestimmungen und Datenschutzbestimmungen.",
     "form_submit": "Schicken",
 
-    "cookie1": "Die Website verwendet Cookies, um die Zugänglichkeit zu verbessern, sie zu personalisieren und Daten über den Website-Verkehr zu sammeln. Jeder kann selbst entscheiden, ob er Cookies zulässt, indem er seinen Browser entsprechend einstellt.",
-    "cookie2": "Weitere Informationen finden Sie in ",
-    "cookie_policy": "den Datenschutzbestimmungen und -bestimmungen.",
+    "cookie1": "Die Website verwendet Cookies, um die Zugänglichkeit und Personalisierung zu verbessern und Daten über den Website-Verkehr zu sammeln. Jeder kann selbst entscheiden, ob er Cookies zulässt, indem er seinen Browser entsprechend einstellt.",
+    "cookie2": "Weitere Informationen finden Sie in den ",
+    "cookie_policy": "Datenschutzbestimmungen und -bestimmungen.",
 
     "footer_policy": "Allgemeine Geschäftsbedingungen und Datenschutzbestimmungen",
     
@@ -125,7 +125,8 @@
     "terms_text39": "Der Nutzer kann die Einstellungen für Cookies selbständig und jederzeit ändern, indem er die Bedingungen für ihre Speicherung und den Zugriff auf Cookies auf dem Endgerät des Nutzers festlegt. Änderungen an den Einstellungen gemäß dem vorherigen Satz kann der Nutzer mit den Einstellungen seines Internetbrowsers oder durch Konfiguration der Dienstleistung vornehmen. Diese Einstellungen können insbesondere so geändert werden, dass die automatische Verarbeitung von Cookies in den Einstellungen des Internetbrowsers blockiert wird oder der Nutzer bei jeder Platzierung von Cookies auf dem Endgerät informiert wird. Detaillierte Informationen zu den Möglichkeiten und Methoden der Verwaltung von Cookies sind in den Softwareeinstellungen (Internetbrowser) verfügbar.",
     "terms_text40": "Nachfolgend zeigen wir, wie Sie die Einstellungen von Internetbrowsern in Bezug auf die Verwendung von Cookies ändern können:",
     "terms_text41": "Der Nutzer kann jederzeit Cookies mithilfe der verfügbaren Funktionen im von ihm verwendeten Internetbrowser löschen. Die Einschränkung der Verwendung von Cookies kann sich auf einige auf der Website des Dienstes verfügbare Funktionen auswirken.",
-        
+    "understand_and_accept": "Ich verstehe und akzeptiere",
+    
     "sun_title": "Sonne",
     "wind_title": "Wind",
     "fire_title": "Feuer",

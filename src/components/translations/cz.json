@@ -44,9 +44,9 @@
     "form_personal_data2": "předpisy a zásady ochrany osobních údajů.",
     "form_submit": "Poslat",
 
-    "cookie1": "Web používá soubory cookie ke zlepšení přístupnosti, personalizaci a shromažďování údajů o návštěvnosti webu. Každý se může sám rozhodnout, zda cookies povolí, a to odpovídajícím nastavením svého prohlížeče.",
+    "cookie1": "Web používá cookies pro zlepšení své přístupnosti, personalizace a pro shromažďování údajů o návštěvnosti webu. Každý se může sám rozhodnout, zda cookies povolí, a to odpovídajícím nastavením svého prohlížeče.",
     "cookie2": "Více informací naleznete v ",
-    "cookie_policy": "Zásadách ochrany osobních údajů a Předpisech.",
+    "privacy_policy": "Zásady ochrany osobních údajů",
 
     "footer_policy": "Smluvní podmínky a zásady ochrany osobních údajů",
     
@@ -125,7 +125,8 @@
     "terms_text39": "Uživatel může samostatně a kdykoliv změnit nastavení týkající se souborů cookies stanovením podmínek jejich ukládání a získávání přístupu prostřednictvím souborů cookies na zařízení uživatele. Uživatel může provést změny v uvedených nastaveních prostřednictvím nastavení webového prohlížeče nebo pomocí konfigurace služby. Tato nastavení mohou být změněna zejména tak, aby blokovala automatické zpracování souborů cookies v nastavení webového prohlížeče nebo informovala o jejich každoročním umístění cookies na zařízení uživatele. Podrobné informace o možnostech a způsobech správy souborů cookies jsou k dispozici v nastavení software (webového prohlížeče).",
     "terms_text40": "Níže uvádíme, jak lze změnit nastavení internetových prohlížečů v oblasti používání souborů cookies:",
     "terms_text41": "Uživatel může kdykoli odstranit soubory cookies pomocí dostupných funkcí ve webovém prohlížeči, který používá. Omezení používání souborů cookies může mít vliv na některé dostupné funkce na webové stránce služby.",
-    
+    "understand_and_accept": "Chápu a přijímám",
+
     "sun_title": "Slunce",
     "wind_title": "Vítr",
     "fire_title": "Oheň",
